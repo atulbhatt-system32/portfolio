@@ -199,7 +199,7 @@ export default function Home({ publications }) {
     } else {
       return (
         <svg
-          className="w-6 h-6 transition-all duration-150 ease-in-out flex text-mid group-hover:text-dark"
+          className="flex w-6 h-6 transition-all duration-150 ease-in-out text-mid group-hover:text-dark"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -216,28 +216,26 @@ export default function Home({ publications }) {
   };
 
   return (
-    <div className="bg-white dark:bg-darker transition-all duration-150 ease-in-out">
+    <div className="transition-all duration-150 ease-in-out bg-white dark:bg-darker">
       <div
-        className={`relative w-full dark:bg-darker bg-light bg-opacity-10 overflow-auto min-h-screen transition-all duration-150 ease-in-out ${
-          navbarOpen ? "overflow-hidden" : "overflow-auto"
-        }`}
+        className={`relative w-full dark:bg-darker bg-light bg-opacity-10 overflow-auto min-h-screen transition-all duration-150 ease-in-out ${navbarOpen ? "overflow-hidden" : "overflow-auto"
+          }`}
       >
         <Head>
-          <title>Daniel Cranney | Frontend Developer & Designer</title>
+          <title>Atul Bhatt | Frontend Engineer</title>
           <meta
             name="description"
-            content="The portfolio of frontend developer and designer, Daniel Cranney"
+            content="The portfolio of freelance frontend developer, Atul Bhatt"
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
         {/* Full-screen Menu */}
         <div
-          className={`fixed w-full z-50 h-screen pt-24 bg-white dark:bg-darker bg-opacity-100 transform delay-100 transition-all duration-150 ${
-            navbarOpen
-              ? "opacity-100 translate-x-0"
-              : "opacity-0 -translate-x-full"
-          }`}
+          className={`fixed w-full z-50 h-screen pt-24 bg-white dark:bg-darker bg-opacity-100 transform delay-100 transition-all duration-150 ${navbarOpen
+            ? "opacity-100 translate-x-0"
+            : "opacity-0 -translate-x-full"
+            }`}
         >
           <div className="container relative mx-auto">
             <nav className="block ml-auto">
@@ -245,11 +243,10 @@ export default function Home({ publications }) {
                 <li className="z-50 block py-2 list-none lg:inline-block">
                   <button
                     href="#"
-                    className={`header_link text-xl font-semibold transition-all duration-150 ease-in-out ${
-                      visibleSection === "home"
-                        ? "selected delay-200"
-                        : "dark:text-light dark:hover:text-white text-mid hover:text-mid border-b-2 border-transparent"
-                    }`}
+                    className={`header_link text-xl font-semibold transition-all duration-150 ease-in-out ${visibleSection === "home"
+                      ? "selected delay-200"
+                      : "dark:text-light dark:hover:text-white text-mid hover:text-mid border-b-2 border-transparent"
+                      }`}
                     onClick={() => {
                       setNavbarOpen(false);
                       scrollTo(homeRef.current);
@@ -261,11 +258,10 @@ export default function Home({ publications }) {
                 <li className="z-50 block py-2 list-none lg:inline-block">
                   <button
                     href="#"
-                    className={`header_link text-xl font-semibold transition-all duration-150 ease-in-out ${
-                      visibleSection === "about"
-                        ? "current"
-                        : "dark:text-light dark:hover:text-white text-mid hover:text-mid border-b-2 border-transparent"
-                    }`}
+                    className={`header_link text-xl font-semibold transition-all duration-150 ease-in-out ${visibleSection === "about"
+                      ? "current"
+                      : "dark:text-light dark:hover:text-white text-mid hover:text-mid border-b-2 border-transparent"
+                      }`}
                     onClick={() => {
                       setNavbarOpen(false);
                       scrollTo(aboutRef.current);
@@ -277,11 +273,10 @@ export default function Home({ publications }) {
                 <li className="z-50 block py-2 list-none lg:inline-block">
                   <button
                     href="#"
-                    className={`header_link text-xl font-semibold transition-all duration-150 ease-in-out ${
-                      visibleSection === "skills"
-                        ? "current"
-                        : "dark:text-light dark:hover:text-white text-mid hover:text-mid border-b-2 border-transparent"
-                    }`}
+                    className={`header_link text-xl font-semibold transition-all duration-150 ease-in-out ${visibleSection === "skills"
+                      ? "current"
+                      : "dark:text-light dark:hover:text-white text-mid hover:text-mid border-b-2 border-transparent"
+                      }`}
                     onClick={() => {
                       setNavbarOpen(false);
                       scrollTo(skillsRef.current);
@@ -293,11 +288,10 @@ export default function Home({ publications }) {
                 <li className="z-50 block py-2 list-none lg:inline-block">
                   <button
                     href="#"
-                    className={`header_link text-xl font-semibold transition-all duration-150 ease-in-out ${
-                      visibleSection === "my-work"
-                        ? "current"
-                        : "dark:text-light dark:hover:text-white text-mid  hover:text-mid border-b-2 border-transparent"
-                    }`}
+                    className={`header_link text-xl font-semibold transition-all duration-150 ease-in-out ${visibleSection === "my-work"
+                      ? "current"
+                      : "dark:text-light dark:hover:text-white text-mid  hover:text-mid border-b-2 border-transparent"
+                      }`}
                     onClick={() => {
                       setNavbarOpen(false);
                       scrollTo(myWorkRef.current);
@@ -311,11 +305,10 @@ export default function Home({ publications }) {
                     href="#"
                     target="_blank"
                     rel="noreferrer"
-                    className={`header_link text-xl font-semibold transition-all duration-150 ease-in-out ${
-                      visibleSection === "blog"
-                        ? "current"
-                        : "dark:text-light dark:hover:text-white text-mid hover:text-mid border-b-2 border-transparent"
-                    }`}
+                    className={`header_link text-xl font-semibold transition-all duration-150 ease-in-out ${visibleSection === "blog"
+                      ? "current"
+                      : "dark:text-light dark:hover:text-white text-mid hover:text-mid border-b-2 border-transparent"
+                      }`}
                     onClick={() => {
                       setNavbarOpen(false);
                       scrollTo(blogRef.current);
@@ -327,11 +320,10 @@ export default function Home({ publications }) {
                 <li className="z-50 block py-2 list-none lg:inline-block">
                   <button
                     href="#"
-                    className={`header_link text-xl font-semibold transition-all duration-150 ease-in-out ${
-                      visibleSection === "contact"
-                        ? "current"
-                        : "dark:text-light dark:hover:text-white text-mid hover:text-mid border-b-2 border-transparent"
-                    }`}
+                    className={`header_link text-xl font-semibold transition-all duration-150 ease-in-out ${visibleSection === "contact"
+                      ? "current"
+                      : "dark:text-light dark:hover:text-white text-mid hover:text-mid border-b-2 border-transparent"
+                      }`}
                     onClick={() => {
                       setNavbarOpen(false);
                       scrollTo(contactRef.current);
@@ -342,7 +334,7 @@ export default function Home({ publications }) {
                 </li>
                 <li className="z-40 block py-2 mt-6 list-none lg:inline-block">
                   <a
-                    href={`mailto:danielcranney@gmail.com`}
+                    href={`mailto:mratulbhatt97@gmail.com`}
                     className="text-lg btn-brand btn-lg group"
                   >
                     Get in touch
@@ -356,31 +348,29 @@ export default function Home({ publications }) {
         {/* Header and Nav */}
         <header
           ref={headerRef}
-          className={`header top-0 mx-auto flex items-center z-50 fixed w-full transition-all duration-150 h-20 ease-in-out ${
-            scrolling ? "-translate-y-full" : ""
-          } ${scrolling && !navbarOpen ? "dark:bg-darker" : "dark:bg-darker"}`}
+          className={`header top-0 mx-auto flex items-center z-50 fixed w-full transition-all duration-150 h-20 ease-in-out ${scrolling ? "-translate-y-full" : ""
+            } ${scrolling && !navbarOpen ? "dark:bg-darker" : "dark:bg-darker"}`}
         >
           {/* Logo and Nav container */}
           <div className="container relative flex items-center mx-auto">
             {/* Logo */}
-            <div className="z-50 sm:w-10 sm:h-10 w-11 h-11 flex items-center">
+            <div className="z-50 flex items-center sm:w-10 sm:h-10 w-11 h-11">
               <NewIcon />
             </div>
             {/* Text */}
             <div className="flex items-center ml-4">
-              <p className="text-lg font-semibold font-display tracking-tight dark:text-white text-darker mb-0 transition-all duration-150 ease-in-out">
-                Daniel Cranney
+              <p className="mb-0 text-lg font-semibold tracking-tight transition-all duration-150 ease-in-out font-display dark:text-white text-darker">
+                Atul Bhatt
               </p>
             </div>
             {/* Nav */}
-            <nav className="block ml-auto h-full">
+            <nav className="block h-full ml-auto">
               <ul className="z-50 flex items-center">
                 <li className="z-50 hidden mx-5 list-none lg:inline-block">
                   <button
                     href="#"
-                    className={`nav-item ${
-                      visibleSection === "home" ? "current" : "active"
-                    }`}
+                    className={`nav-item ${visibleSection === "home" ? "current" : "active"
+                      }`}
                     onClick={() => {
                       scrollTo(homeRef.current);
                     }}
@@ -391,9 +381,8 @@ export default function Home({ publications }) {
                 <li className="z-50 hidden mx-5 list-none lg:inline-block">
                   <button
                     href="#"
-                    className={`nav-item ${
-                      visibleSection === "about" ? "current" : "active"
-                    }`}
+                    className={`nav-item ${visibleSection === "about" ? "current" : "active"
+                      }`}
                     onClick={() => {
                       scrollTo(aboutRef.current);
                     }}
@@ -404,9 +393,8 @@ export default function Home({ publications }) {
                 <li className="z-50 hidden mx-5 list-none lg:inline-block">
                   <button
                     href="#"
-                    className={`nav-item ${
-                      visibleSection === "skills" ? "current" : "active"
-                    }`}
+                    className={`nav-item ${visibleSection === "skills" ? "current" : "active"
+                      }`}
                     onClick={() => {
                       scrollTo(skillsRef.current);
                     }}
@@ -417,9 +405,8 @@ export default function Home({ publications }) {
                 <li className="z-50 hidden mx-5 list-none lg:inline-block">
                   <button
                     href="#"
-                    className={`nav-item ${
-                      visibleSection === "my-work" ? "current" : "active"
-                    }`}
+                    className={`nav-item ${visibleSection === "my-work" ? "current" : "active"
+                      }`}
                     onClick={() => {
                       scrollTo(myWorkRef.current);
                     }}
@@ -432,9 +419,8 @@ export default function Home({ publications }) {
                     href="#"
                     target="_blank"
                     rel="noreferrer"
-                    className={`nav-item ${
-                      visibleSection === "blog" ? "current" : "active"
-                    }`}
+                    className={`nav-item ${visibleSection === "blog" ? "current" : "active"
+                      }`}
                     onClick={() => {
                       scrollTo(blogRef.current);
                     }}
@@ -445,9 +431,8 @@ export default function Home({ publications }) {
                 <li className="z-50 hidden mx-5 list-none lg:inline-block">
                   <button
                     href="#"
-                    className={`nav-item ${
-                      visibleSection === "contact" ? "current" : "active"
-                    }`}
+                    className={`nav-item ${visibleSection === "contact" ? "current" : "active"
+                      }`}
                     onClick={() => {
                       scrollTo(contactRef.current);
                     }}
@@ -465,31 +450,27 @@ export default function Home({ publications }) {
                 </li>
                 <li className="z-50 inline-block list-none lg:hidden group">
                   <button
-                    className={`relative w-10 h-10 ${
-                      navbarOpen
-                        ? "dark:text-white text-dark"
-                        : "text-mid group-hover:text-dark dark:opacity-50 dark:group-hover:opacity-100 dark:text-white dark:group-hover:text-white"
-                    } focus:outline-none`}
+                    className={`relative w-10 h-10 ${navbarOpen
+                      ? "dark:text-white text-dark"
+                      : "text-mid group-hover:text-dark dark:opacity-50 dark:group-hover:opacity-100 dark:text-white dark:group-hover:text-white"
+                      } focus:outline-none`}
                     onClick={() => setNavbarOpen(!navbarOpen)}
                   >
                     <div className="absolute block w-5 transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
                       <span
                         aria-hidden="true"
-                        className={`block absolute h-0.5 w-5 bg-current transform transition duration-200 ease-in-out ${
-                          navbarOpen ? "rotate-45" : "-translate-y-1.5"
-                        }`}
+                        className={`block absolute h-0.5 w-5 bg-current transform transition duration-200 ease-in-out ${navbarOpen ? "rotate-45" : "-translate-y-1.5"
+                          }`}
                       ></span>
                       <span
                         aria-hidden="true"
-                        className={`block absolute h-0.5 w-5 bg-current transform transition duration-200 ease-in-out ${
-                          navbarOpen ? "opacity-0" : "opacity-100"
-                        }`}
+                        className={`block absolute h-0.5 w-5 bg-current transform transition duration-200 ease-in-out ${navbarOpen ? "opacity-0" : "opacity-100"
+                          }`}
                       ></span>
                       <span
                         aria-hidden="true"
-                        className={`block absolute h-0.5 w-5 bg-current transform transition duration-200 ease-in-out ${
-                          navbarOpen ? "-rotate-45" : "translate-y-1.5"
-                        }`}
+                        className={`block absolute h-0.5 w-5 bg-current transform transition duration-200 ease-in-out ${navbarOpen ? "-rotate-45" : "translate-y-1.5"
+                          }`}
                       ></span>
                     </div>
                   </button>
@@ -499,7 +480,7 @@ export default function Home({ publications }) {
             <div className="flex mt-auto ml-0 lg:ml-5">
               {/* Dark mode */}
               <button
-                className="flex items-center justify-center w-7 h-12 transition-all duration-150 ease-in rounded-sm focus:outline-none group bg-transparent outline-none"
+                className="flex items-center justify-center h-12 transition-all duration-150 ease-in bg-transparent rounded-sm outline-none w-7 focus:outline-none group"
                 onClick={() => {
                   setTheme(theme === "dark" ? "light" : "dark");
                 }}
@@ -522,7 +503,7 @@ export default function Home({ publications }) {
                 </span> */}
 
                 <h1 className="mb-2 text-5xl md:text-7xl dark:text-white text-dark">
-                  Daniel Cranney
+                  Atul Bhatt
                 </h1>
                 <h2 className="mb-4 text-3xl md:text-4xl dark:text-light text-mid">
                   <ReactTypingEffect
@@ -531,10 +512,10 @@ export default function Home({ publications }) {
                     eraseSpeed={30}
                     eraseDelay={1500}
                     text={[
-                      "Developer Advocate",
                       "Developer",
-                      "Public Speaker",
-                      `Cat Dad`,
+                      "Technical Blogger",
+                      "Open Source Contributor",
+                      "Poet/Writer",
                     ]}
                   />
                 </h2>
@@ -566,39 +547,29 @@ export default function Home({ publications }) {
               <div className="flex flex-col-reverse items-start w-full md:flex-row">
                 <div className="flex flex-col w-full md:pr-8 md:w-3/5">
                   <p className="text-lg">
-                    Hi! I&apos;m Dan and I&apos;m a frontend developer, designer
-                    and teacher from Bristol, England.
+                    Hi! I&apos;m Atul and I&apos;m a frontend developer from
+                    Uttarakhand, India.
                   </p>
                   <p className="text-lg">
-                    After building my first website aged thirteen, I knew I
+                    After I got my first computer at the age of 14, I knew I
                     wanted to work with computers and technology, and I&apos;ve
                     never looked back.
                   </p>
                   <p className="text-lg">
-                    After graduating University with a Media degree, I began
-                    freelancing as a designer, creating graphics, video content
-                    and websites for small businesses, using content management
-                    systems like Wordpress, Joomla and Squarespace.
+                    After graduating University with a Masters Degree in Computers Application,
+                    I worked for a startup for about 2 years in which I started freelancing part-time,
+                    until I decided to go full-time.
+                  </p>
+                  <p>
+                    I have worked with teams, and I have also worked as a solo developer. I have experience in
+                    building web apps from scratch, and also in maintaining and updating existing projects.
                   </p>
                   <p className="text-lg">
                     In recent years, I&apos;ve been focused on programming,
                     building a solid frontend stack and creating exciting
                     projects that solve real-world problems.
                   </p>
-                  <p className="text-lg">
-                    Alongside my design and development work, I run a BA Media
-                    Production degree course and a corporate video production
-                    company called{" "}
-                    <a
-                      href="http://www.wearespotlight.co.uk"
-                      target="_blank"
-                      className="underline-link"
-                      rel="noreferrer"
-                    >
-                      Spotlight Media
-                    </a>
-                    , so I like to keep busy!
-                  </p>
+
                   <p className="text-lg">
                     Take a look at my work below to see what I&apos;m working
                     on, and get in touch if you&apos;d like to work together!
@@ -606,11 +577,11 @@ export default function Home({ publications }) {
                 </div>
                 <div className="flex w-full h-full mb-4 md:pl-8 md:w-2/5 md:mb-0">
                   <Image
-                    src="/headshot-2023.jpg"
+                    src="/headshot-2024.jpg"
                     className="overflow-hidden rounded-md"
                     width={880}
                     height={880}
-                    alt={"Daniel Cranney headshot"}
+                    alt={"Atul Bhatt headshot"}
                   />
                 </div>
               </div>
@@ -627,7 +598,7 @@ export default function Home({ publications }) {
             <hr className="bg-brand w-40 h-1.5 mt-4 mb-6 border-0"></hr>
 
             {/* Skills icons */}
-            <div className="w-full mr-auto grid gap-4 grid-cols-4 sm:grid-cols-4 md:grid-cols-8 mt-4">
+            <div className="grid w-full grid-cols-4 gap-4 mt-4 mr-auto sm:grid-cols-4 md:grid-cols-8">
               {/* HTML */}
               <Icon
                 IconType={Html}
@@ -724,69 +695,6 @@ export default function Home({ publications }) {
                 fixedHeight={"h-28"}
               />
 
-              {/* Node */}
-              <Icon
-                IconType={NodeJs}
-                title="Node"
-                width={"w-16"}
-                height={"h-16"}
-                padding={"p-0"}
-                flexDirection={"flex-col"}
-                titleMargins={"mt-4"}
-                titleSize={"text-sm sm:text-sm"}
-                marginBottom={"mb-4"}
-                marginRight={"mr-0"}
-                textTransform={"normal-case"}
-                fixedHeight={"h-28"}
-              />
-
-              {/* Express */}
-              <Icon
-                IconType={Express}
-                title="Express"
-                width={"w-16"}
-                height={"h-16"}
-                padding={"p-0"}
-                flexDirection={"flex-col"}
-                titleMargins={"mt-4"}
-                titleSize={"text-sm sm:text-sm"}
-                marginBottom={"mb-4"}
-                marginRight={"mr-0"}
-                textTransform={"normal-case"}
-                fixedHeight={"h-28"}
-              />
-
-              {/* Supabase */}
-              <Icon
-                IconType={Supabase}
-                title="Supabase"
-                width={"w-16"}
-                height={"h-16"}
-                padding={"p-0"}
-                flexDirection={"flex-col"}
-                titleMargins={"mt-4"}
-                titleSize={"text-sm sm:text-sm"}
-                marginBottom={"mb-4"}
-                marginRight={"mr-0"}
-                textTransform={"normal-case"}
-                fixedHeight={"h-28"}
-              />
-
-              {/* MongoDb */}
-              <Icon
-                IconType={MongoDb}
-                title="MongoDb"
-                width={"w-16"}
-                height={"h-16"}
-                padding={"p-0"}
-                flexDirection={"flex-col"}
-                titleMargins={"mt-4"}
-                titleSize={"text-sm sm:text-sm"}
-                marginBottom={"mb-4"}
-                marginRight={"mr-0"}
-                textTransform={"normal-case"}
-                fixedHeight={"h-28"}
-              />
 
               {/* Sass */}
               <Icon
@@ -805,73 +713,9 @@ export default function Home({ publications }) {
               />
 
               {/* Bootstrap */}
-              {/* <Icon
+              <Icon
                 IconType={Bootstrap}
                 title="Bootstrap"
-                width={"w-16"}
-                height={"h-16"}
-                padding={"p-0"}
-                flexDirection={"flex-col"}
-                titleMargins={"mt-4"}
-                titleSize={"text-sm sm:text-sm"}
-                marginBottom={"mb-4"}
-                marginRight={"mr-0"}
-                textTransform={"normal-case"}
-                fixedHeight={"h-28"}
-              /> */}
-
-              {/* Firebase */}
-              <Icon
-                IconType={Firebase}
-                title="Firebase"
-                width={"w-16"}
-                height={"h-16"}
-                padding={"p-0"}
-                flexDirection={"flex-col"}
-                titleMargins={"mt-4"}
-                titleSize={"text-sm sm:text-sm"}
-                marginBottom={"mb-4"}
-                marginRight={"mr-0"}
-                textTransform={"normal-case"}
-                fixedHeight={"h-28"}
-              />
-
-              {/* Photoshop */}
-              <Icon
-                IconType={Photoshop}
-                title="Photoshop"
-                width={"w-16"}
-                height={"h-16"}
-                padding={"p-0"}
-                flexDirection={"flex-col"}
-                titleMargins={"mt-4"}
-                titleSize={"text-sm sm:text-sm"}
-                marginBottom={"mb-4"}
-                marginRight={"mr-0"}
-                textTransform={"normal-case"}
-                fixedHeight={"h-28"}
-              />
-
-              {/* Illustrator */}
-              <Icon
-                IconType={Illustrator}
-                title="Illustrator"
-                width={"w-16"}
-                height={"h-16"}
-                padding={"p-0"}
-                flexDirection={"flex-col"}
-                titleMargins={"mt-4"}
-                titleSize={"text-sm sm:text-sm"}
-                marginBottom={"mb-4"}
-                marginRight={"mr-0"}
-                textTransform={"normal-case"}
-                fixedHeight={"h-28"}
-              />
-
-              {/* After Effects */}
-              <Icon
-                IconType={AfterEffects}
-                title="After Effects"
                 width={"w-16"}
                 height={"h-16"}
                 padding={"p-0"}
@@ -899,6 +743,24 @@ export default function Home({ publications }) {
                 textTransform={"normal-case"}
                 fixedHeight={"h-28"}
               />
+
+              {/* Adobe XD */}
+              <Icon
+                IconType={Figma}
+                title="Figma"
+                width={"w-16"}
+                height={"h-16"}
+                padding={"p-0"}
+                flexDirection={"flex-col"}
+                titleMargins={"mt-4"}
+                titleSize={"text-sm sm:text-sm"}
+                marginBottom={"mb-4"}
+                marginRight={"mr-0"}
+                textTransform={"normal-case"}
+                fixedHeight={"h-28"}
+              />
+
+
             </div>
           </section>
 
@@ -916,16 +778,16 @@ export default function Home({ publications }) {
             <div className="flex flex-col w-full mb-12">
               {/* Project One */}
               <FeaturedProjectCard
-                title={"Smylo"}
-                status={"Join the Waitlist"}
-                description={`Keep your life on track and never miss another important date again`}
+                title={"Rainbow"}
+                status={"V0.1 Just Launched (Open Source)"}
+                description={`modern design and code editor`}
                 float={`right-0`}
                 flexDirection={`flex-col lg:flex-row`}
                 imgWidth={"1366"}
                 imgHeight={"666"}
-                imgSrc={"/projects/smylo.png"}
-                liveLink={"https://smylo.co/"}
-                repoLink={null}
+                imgSrc={"/projects/rnbw.png"}
+                liveLink={"https://rnbw.design"}
+                repoLink={"https://github.com/rnbwdev/rnbw"}
                 stack={
                   <>
                     <Icon
@@ -945,8 +807,8 @@ export default function Home({ publications }) {
                     />
 
                     <Icon
-                      IconType={Tailwind}
-                      title="Tailwind"
+                      IconType={Css}
+                      title="CSS"
                       columnSizing={"w-auto"}
                       width={"w-6"}
                       height={"h-6"}
@@ -975,52 +837,356 @@ export default function Home({ publications }) {
                       textTransform={"uppercase"}
                       fixedHeight={"h-auto"}
                     />
-
-                    <Icon
-                      IconType={NextJs}
-                      title="Next"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
-
-                    <Icon
-                      IconType={Supabase}
-                      title="Supabase"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
                   </>
                 }
               />
+
               {/* Project Two */}
               <FeaturedProjectCard
-                title={"ColorHub"}
-                status={"V2 Just Launched"}
-                description={`Find the perfect palette for your next perfect. pick it, preview it and paste it right into your code.`}
+                title={"HTTP Status Insight"}
+                status={"Live (Open Source)"}
+                description={`Decoding HTTP with Status Code Insight`}
                 float={`right-0`}
                 flexDirection={`flex-col lg:flex-row-reverse`}
                 imgWidth={"1366"}
                 imgHeight={"666"}
-                imgSrc={"/projects/colorhub.png"}
-                liveLink={"https://colorhub.app/"}
+                imgSrc={"/projects/httpstatus.png"}
+                liveLink={"https://httpstatusinsight.netlify.app/"}
+                repoLink={"https://github.com/hiteshchoudhary/apihub"}
+                stack={
+                  <>
+                    <Icon
+                      IconType={Html}
+                      title="HTML"
+                      columnSizing={"w-auto"}
+                      width={"w-6"}
+                      height={"h-6"}
+                      flexDirection={"flex-row"}
+                      padding={"p-0"}
+                      titleMargins={"my-0 ml-1"}
+                      titleSize={"text-sm"}
+                      marginBottom={"mb-4"}
+                      marginRight={"mr-3"}
+                      textTransform={"uppercase"}
+                      fixedHeight={"h-auto"}
+                    />
+
+                    <Icon
+                      IconType={Css}
+                      title="CSS"
+                      columnSizing={"w-auto"}
+                      width={"w-6"}
+                      height={"h-6"}
+                      flexDirection={"flex-row"}
+                      padding={"p-0"}
+                      titleMargins={"my-0 ml-1"}
+                      titleSize={"text-sm"}
+                      marginBottom={"mb-4"}
+                      marginRight={"mr-3"}
+                      textTransform={"uppercase"}
+                      fixedHeight={"h-auto"}
+                    />
+
+                    <Icon
+                      IconType={ReactJs}
+                      title="React"
+                      columnSizing={"w-auto"}
+                      width={"w-6"}
+                      height={"h-6"}
+                      flexDirection={"flex-row"}
+                      padding={"p-0"}
+                      titleMargins={"my-0 ml-1"}
+                      titleSize={"text-sm"}
+                      marginBottom={"mb-4"}
+                      marginRight={"mr-3"}
+                      textTransform={"uppercase"}
+                      fixedHeight={"h-auto"}
+                    />
+                  </>
+                }
+              />
+
+
+              {/* Project Three */}
+              <FeaturedProjectCard
+                title={"weareunder.design"}
+                status={"Live"}
+                description={`
+                Site for a design agency based in Israel
+                `}
+                float={`right-0`}
+                flexDirection={`flex-col lg:flex-row`}
+                imgWidth={"1366"}
+                imgHeight={"666"}
+                imgSrc={"/projects/under.png"}
+                liveLink={"https://weareunder.design/"}
+                repoLink={null}
+                stack={
+                  <div className="flex gap-4">
+                    <Icon
+                      IconType={Html}
+                      title="HTML"
+                      columnSizing={"w-auto"}
+                      width={"w-6"}
+                      height={"h-6"}
+                      flexDirection={"flex-row"}
+                      padding={"p-0"}
+                      titleMargins={"my-0 ml-1"}
+                      titleSize={"text-sm"}
+                      marginBottom={"mb-4"}
+                      marginRight={"mr-3"}
+                      textTransform={"uppercase"}
+                      fixedHeight={"h-auto"}
+                    />
+
+                    <Icon
+                      IconType={Css}
+                      title="HTML"
+                      columnSizing={"w-auto"}
+                      width={"w-6"}
+                      height={"h-6"}
+                      flexDirection={"flex-row"}
+                      padding={"p-0"}
+                      titleMargins={"my-0 ml-1"}
+                      titleSize={"text-sm"}
+                      marginBottom={"mb-4"}
+                      marginRight={"mr-3"}
+                      textTransform={"uppercase"}
+                      fixedHeight={"h-auto"}
+                    />
+
+                    Webflow
+
+                  </div>
+                }
+              />
+              {/* Project Four */}
+              <FeaturedProjectCard
+                title={"Tealbox.digital"}
+                status={"Live"}
+                description={`The Analytics & Performance Marketing Agency`}
+                float={`right-0`}
+                flexDirection={`flex-col lg:flex-row-reverse`}
+                imgWidth={"1366"}
+                imgHeight={"666"}
+                imgSrc={"/projects/tealbox.png"}
+                liveLink={"https://tealbox.digital"}
+                repoLink={null}
+                stack={
+                  <div className="flex gap-4">
+                    <Icon
+                      IconType={Html}
+                      title="HTML"
+                      columnSizing={"w-auto"}
+                      width={"w-6"}
+                      height={"h-6"}
+                      flexDirection={"flex-row"}
+                      padding={"p-0"}
+                      titleMargins={"my-0 ml-1"}
+                      titleSize={"text-sm"}
+                      marginBottom={"mb-4"}
+                      marginRight={"mr-3"}
+                      textTransform={"uppercase"}
+                      fixedHeight={"h-auto"}
+                    />
+
+                    <Icon
+                      IconType={Css}
+                      title="HTML"
+                      columnSizing={"w-auto"}
+                      width={"w-6"}
+                      height={"h-6"}
+                      flexDirection={"flex-row"}
+                      padding={"p-0"}
+                      titleMargins={"my-0 ml-1"}
+                      titleSize={"text-sm"}
+                      marginBottom={"mb-4"}
+                      marginRight={"mr-3"}
+                      textTransform={"uppercase"}
+                      fixedHeight={"h-auto"}
+                    />
+
+                    Webflow
+
+                  </div>
+                }
+              />
+
+              {/* Project Five */}
+              <FeaturedProjectCard
+                title={"Storyteller"}
+                status={"Live"}
+                description={`Empower Your Agency's Creativity with Data-Driven Insights`}
+                float={`right-0`}
+                flexDirection={`flex-col lg:flex-row`}
+                imgWidth={"1366"}
+                imgHeight={"666"}
+                imgSrc={"/projects/storyteller.png"}
+                liveLink={"https://thestoryteller.tech/"}
+                repoLink={null}
+                stack={
+                  <div className="flex gap-4">
+                    <Icon
+                      IconType={Html}
+                      title="HTML"
+                      columnSizing={"w-auto"}
+                      width={"w-6"}
+                      height={"h-6"}
+                      flexDirection={"flex-row"}
+                      padding={"p-0"}
+                      titleMargins={"my-0 ml-1"}
+                      titleSize={"text-sm"}
+                      marginBottom={"mb-4"}
+                      marginRight={"mr-3"}
+                      textTransform={"uppercase"}
+                      fixedHeight={"h-auto"}
+                    />
+
+                    <Icon
+                      IconType={Css}
+                      title="HTML"
+                      columnSizing={"w-auto"}
+                      width={"w-6"}
+                      height={"h-6"}
+                      flexDirection={"flex-row"}
+                      padding={"p-0"}
+                      titleMargins={"my-0 ml-1"}
+                      titleSize={"text-sm"}
+                      marginBottom={"mb-4"}
+                      marginRight={"mr-3"}
+                      textTransform={"uppercase"}
+                      fixedHeight={"h-auto"}
+                    />
+
+                    <Icon
+                      IconType={ReactJs}
+                      title="React"
+                      columnSizing={"w-auto"}
+                      width={"w-6"}
+                      height={"h-6"}
+                      flexDirection={"flex-row"}
+                      padding={"p-0"}
+                      titleMargins={"my-0 ml-1"}
+                      titleSize={"text-sm"}
+                      marginBottom={"mb-4"}
+                      marginRight={"mr-3"}
+                      textTransform={"uppercase"}
+                      fixedHeight={"h-auto"}
+                    />
+
+                    <Icon
+                      IconType={Sass}
+                      title="Sass"
+                      columnSizing={"w-auto"}
+                      width={"w-6"}
+                      height={"h-6"}
+                      flexDirection={"flex-row"}
+                      padding={"p-0"}
+                      titleMargins={"my-0 ml-1"}
+                      titleSize={"text-sm"}
+                      marginBottom={"mb-4"}
+                      marginRight={"mr-3"}
+                      textTransform={"uppercase"}
+                      fixedHeight={"h-auto"}
+                    />
+
+                  </div>
+                }
+              />
+
+              {/* Project Six */}
+              <FeaturedProjectCard
+                title={"SourceBae"}
+                status={"Live"}
+                description={`Build Your Remote Tech Team Within Just 24 Hours.`}
+                float={`right-0`}
+                flexDirection={`flex-col lg:flex-row-reverse`}
+                imgWidth={"1366"}
+                imgHeight={"666"}
+                imgSrc={"/projects/sourcebae.png"}
+                liveLink={"https://sourcebae.com/"}
+                repoLink={null}
+                stack={
+                  <div className="flex gap-4">
+                    <Icon
+                      IconType={Html}
+                      title="HTML"
+                      columnSizing={"w-auto"}
+                      width={"w-6"}
+                      height={"h-6"}
+                      flexDirection={"flex-row"}
+                      padding={"p-0"}
+                      titleMargins={"my-0 ml-1"}
+                      titleSize={"text-sm"}
+                      marginBottom={"mb-4"}
+                      marginRight={"mr-3"}
+                      textTransform={"uppercase"}
+                      fixedHeight={"h-auto"}
+                    />
+
+                    <Icon
+                      IconType={Css}
+                      title="HTML"
+                      columnSizing={"w-auto"}
+                      width={"w-6"}
+                      height={"h-6"}
+                      flexDirection={"flex-row"}
+                      padding={"p-0"}
+                      titleMargins={"my-0 ml-1"}
+                      titleSize={"text-sm"}
+                      marginBottom={"mb-4"}
+                      marginRight={"mr-3"}
+                      textTransform={"uppercase"}
+                      fixedHeight={"h-auto"}
+                    />
+
+                    <Icon
+                      IconType={ReactJs}
+                      title="React"
+                      columnSizing={"w-auto"}
+                      width={"w-6"}
+                      height={"h-6"}
+                      flexDirection={"flex-row"}
+                      padding={"p-0"}
+                      titleMargins={"my-0 ml-1"}
+                      titleSize={"text-sm"}
+                      marginBottom={"mb-4"}
+                      marginRight={"mr-3"}
+                      textTransform={"uppercase"}
+                      fixedHeight={"h-auto"}
+                    />
+
+                    <Icon
+                      IconType={Sass}
+                      title="Sass"
+                      columnSizing={"w-auto"}
+                      width={"w-6"}
+                      height={"h-6"}
+                      flexDirection={"flex-row"}
+                      padding={"p-0"}
+                      titleMargins={"my-0 ml-1"}
+                      titleSize={"text-sm"}
+                      marginBottom={"mb-4"}
+                      marginRight={"mr-3"}
+                      textTransform={"uppercase"}
+                      fixedHeight={"h-auto"}
+                    />
+
+                  </div>
+                }
+              />
+
+              {/* Project Seven */}
+              <FeaturedProjectCard
+                title={"PayuBuzz"}
+                status={"Launched (Internal Use)"}
+                description={`Intranet Portal developed in SharePoint SPFx for Payu India`}
+                float={`right-0`}
+                flexDirection={`flex-col lg:flex-row`}
+                imgWidth={"1366"}
+                imgHeight={"666"}
+                imgSrc={"/projects/payu.png"}
+                liveLink={null}
                 repoLink={null}
                 stack={
                   <>
@@ -1040,21 +1206,6 @@ export default function Home({ publications }) {
                       fixedHeight={"h-auto"}
                     />
 
-                    <Icon
-                      IconType={Tailwind}
-                      title="Tailwind"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
 
                     <Icon
                       IconType={ReactJs}
@@ -1072,101 +1223,6 @@ export default function Home({ publications }) {
                       fixedHeight={"h-auto"}
                     />
 
-                    <Icon
-                      IconType={NextJs}
-                      title="Next"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
-                  </>
-                }
-              />
-              {/* Project Three */}
-              <FeaturedProjectCard
-                title={"ProfileMe.dev"}
-                status={"Open Source"}
-                description={`Create an amazing GitHub profile complete with skills icons, stat graphs and more in just a couple of minutes.`}
-                float={`right-0`}
-                flexDirection={`flex-col lg:flex-row`}
-                imgWidth={"1366"}
-                imgHeight={"666"}
-                imgSrc={"/projects/profileme.png"}
-                liveLink={"https://profileme.dev"}
-                repoLink={"https://github.com/danielcranney/profileme.dev"}
-                stack={
-                  <>
-                    <Icon
-                      IconType={Html}
-                      title="HTML"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
-
-                    <Icon
-                      IconType={Tailwind}
-                      title="Tailwind"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
-
-                    <Icon
-                      IconType={ReactJs}
-                      title="React"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
-
-                    <Icon
-                      IconType={NextJs}
-                      title="Next"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
                   </>
                 }
               />
@@ -1217,10 +1273,10 @@ export default function Home({ publications }) {
                 <p className="text-lg">
                   Email me at{" "}
                   <Link
-                    href="mailto:danielcranney@gmail.com"
+                    href="mailto:mratulbhatt97@gmail.com"
                     className="underline-link"
                   >
-                    danielcranney@gmail.com
+                    mratulbhatt97@gmail.com
                   </Link>{" "}
                   and let&apos;s talk about your project!
                 </p>
@@ -1230,7 +1286,7 @@ export default function Home({ publications }) {
 
           {/* Footer */}
           <footer className="flex flex-col w-full px-0 py-16 md:px-20 lg:px-24 section">
-            <hr className="w-full h-1 mb-16 dark:bg-white bg-dark border-0 opacity-10"></hr>
+            <hr className="w-full h-1 mb-16 border-0 dark:bg-white bg-dark opacity-10"></hr>
             <div className="w-8 mb-4">
               <svg
                 id="abbe8588-8b21-44fd-a605-eb7de7f82941"
@@ -1301,11 +1357,10 @@ export default function Home({ publications }) {
               >
                 <svg
                   id="e5c888e5-3206-4553-8f53-60ee93248ad9"
-                  className={`group rounded-sm transform  transition duration-500 ease-in-out hover:rotate-45 hover:scale-110 ${
-                    visibleSection === "home"
-                      ? "rotate-45 scale-110"
-                      : "rotate-0 scale-100"
-                  }`}
+                  className={`group rounded-sm transform  transition duration-500 ease-in-out hover:rotate-45 hover:scale-110 ${visibleSection === "home"
+                    ? "rotate-45 scale-110"
+                    : "rotate-0 scale-100"
+                    }`}
                   data-name="Layer 1"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0
@@ -1313,20 +1368,18 @@ export default function Home({ publications }) {
                 >
                   {/* Fill */}
                   <path
-                    className={`fill-current origin-center transform transition duration-200 ease-in-out group-hover:text-dark dark:group-hover:text-white group-hover:rotate-90 ${
-                      visibleSection === "home"
-                        ? "dark:text-white text-mid rotate-90"
-                        : "dark:text-dark text-light rotate-0"
-                    }`}
+                    className={`fill-current origin-center transform transition duration-200 ease-in-out group-hover:text-dark dark:group-hover:text-white group-hover:rotate-90 ${visibleSection === "home"
+                      ? "dark:text-white text-mid rotate-90"
+                      : "dark:text-dark text-light rotate-0"
+                      }`}
                     d="M5.64 5.64h12.73v12.73H5.64z"
                   />
                   {/* Border */}
                   <path
-                    className={`fill-current origin-center transform transition duration-500 ease-in-out dark:group-hover:text-white group-hover:text-dark group-hover:rotate-45 group-hover:opacity-100 ${
-                      visibleSection === "home"
-                        ? "dark:text-white text-dark rotate-45 opacity-100"
-                        : "dark:text-white text-light rotate-45"
-                    }`}
+                    className={`fill-current origin-center transform transition duration-500 ease-in-out dark:group-hover:text-white group-hover:text-dark group-hover:rotate-45 group-hover:opacity-100 ${visibleSection === "home"
+                      ? "dark:text-white text-dark rotate-45 opacity-100"
+                      : "dark:text-white text-light rotate-45"
+                      }`}
                     d="M12 22.41L1.59 12 12 1.59 22.41 12zM4.41 12L12 19.59 19.59 12 12 4.41z"
                   />
                 </svg>
@@ -1340,11 +1393,10 @@ export default function Home({ publications }) {
               >
                 <svg
                   id="e5c888e5-3206-4553-8f53-60ee93248ad9"
-                  className={`group rounded-sm transform  transition duration-500 ease-in-out hover:rotate-45 hover:scale-110 ${
-                    visibleSection === "about"
-                      ? "rotate-45 scale-110"
-                      : "rotate-0 scale-100"
-                  }`}
+                  className={`group rounded-sm transform  transition duration-500 ease-in-out hover:rotate-45 hover:scale-110 ${visibleSection === "about"
+                    ? "rotate-45 scale-110"
+                    : "rotate-0 scale-100"
+                    }`}
                   data-name="Layer 1"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0
@@ -1352,20 +1404,18 @@ export default function Home({ publications }) {
                 >
                   {/* Fill */}
                   <path
-                    className={`fill-current origin-center transform transition duration-200 ease-in-out group-hover:text-dark dark:group-hover:text-white group-hover:rotate-90 ${
-                      visibleSection === "about"
-                        ? "dark:text-white text-mid rotate-90"
-                        : "dark:text-dark text-light rotate-0"
-                    }`}
+                    className={`fill-current origin-center transform transition duration-200 ease-in-out group-hover:text-dark dark:group-hover:text-white group-hover:rotate-90 ${visibleSection === "about"
+                      ? "dark:text-white text-mid rotate-90"
+                      : "dark:text-dark text-light rotate-0"
+                      }`}
                     d="M5.64 5.64h12.73v12.73H5.64z"
                   />
                   {/* Border */}
                   <path
-                    className={`fill-current origin-center transform transition duration-500 ease-in-out dark:group-hover:text-white group-hover:text-dark group-hover:rotate-45 group-hover:opacity-100 ${
-                      visibleSection === "about"
-                        ? "dark:text-white text-dark rotate-45 opacity-100"
-                        : "dark:text-white text-light rotate-45"
-                    }`}
+                    className={`fill-current origin-center transform transition duration-500 ease-in-out dark:group-hover:text-white group-hover:text-dark group-hover:rotate-45 group-hover:opacity-100 ${visibleSection === "about"
+                      ? "dark:text-white text-dark rotate-45 opacity-100"
+                      : "dark:text-white text-light rotate-45"
+                      }`}
                     d="M12 22.41L1.59 12 12 1.59 22.41 12zM4.41 12L12 19.59 19.59 12 12 4.41z"
                   />
                 </svg>
@@ -1379,11 +1429,10 @@ export default function Home({ publications }) {
               >
                 <svg
                   id="e5c888e5-3206-4553-8f53-60ee93248ad9"
-                  className={`group rounded-sm transform  transition duration-500 ease-in-out hover:rotate-45 hover:scale-110 ${
-                    visibleSection === "skills"
-                      ? "rotate-45 scale-110"
-                      : "rotate-0 scale-100"
-                  }`}
+                  className={`group rounded-sm transform  transition duration-500 ease-in-out hover:rotate-45 hover:scale-110 ${visibleSection === "skills"
+                    ? "rotate-45 scale-110"
+                    : "rotate-0 scale-100"
+                    }`}
                   data-name="Layer 1"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0
@@ -1391,20 +1440,18 @@ export default function Home({ publications }) {
                 >
                   {/* Fill */}
                   <path
-                    className={`fill-current origin-center transform transition duration-200 ease-in-out group-hover:text-dark dark:group-hover:text-white group-hover:rotate-90 ${
-                      visibleSection === "skills"
-                        ? "dark:text-white text-mid rotate-90"
-                        : "dark:text-dark text-light rotate-0"
-                    }`}
+                    className={`fill-current origin-center transform transition duration-200 ease-in-out group-hover:text-dark dark:group-hover:text-white group-hover:rotate-90 ${visibleSection === "skills"
+                      ? "dark:text-white text-mid rotate-90"
+                      : "dark:text-dark text-light rotate-0"
+                      }`}
                     d="M5.64 5.64h12.73v12.73H5.64z"
                   />
                   {/* Border */}
                   <path
-                    className={`fill-current origin-center transform transition duration-500 ease-in-out dark:group-hover:text-white group-hover:text-dark group-hover:rotate-45 group-hover:opacity-100 ${
-                      visibleSection === "skills"
-                        ? "dark:text-white text-dark rotate-45 opacity-100"
-                        : "dark:text-white text-light rotate-45"
-                    }`}
+                    className={`fill-current origin-center transform transition duration-500 ease-in-out dark:group-hover:text-white group-hover:text-dark group-hover:rotate-45 group-hover:opacity-100 ${visibleSection === "skills"
+                      ? "dark:text-white text-dark rotate-45 opacity-100"
+                      : "dark:text-white text-light rotate-45"
+                      }`}
                     d="M12 22.41L1.59 12 12 1.59 22.41 12zM4.41 12L12 19.59 19.59 12 12 4.41z"
                   />
                 </svg>
@@ -1418,11 +1465,10 @@ export default function Home({ publications }) {
               >
                 <svg
                   id="e5c888e5-3206-4553-8f53-60ee93248ad9"
-                  className={`group rounded-sm transform transition duration-500 ease-in-out hover:rotate-45 hover:scale-110 ${
-                    visibleSection === "my-work"
-                      ? "rotate-45 scale-110"
-                      : "rotate-0 scale-100"
-                  }`}
+                  className={`group rounded-sm transform transition duration-500 ease-in-out hover:rotate-45 hover:scale-110 ${visibleSection === "my-work"
+                    ? "rotate-45 scale-110"
+                    : "rotate-0 scale-100"
+                    }`}
                   data-name="Layer 1"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0
@@ -1430,20 +1476,18 @@ export default function Home({ publications }) {
                 >
                   {/* Fill */}
                   <path
-                    className={`fill-current origin-center transform transition duration-200 ease-in-out group-hover:text-dark dark:group-hover:text-white group-hover:rotate-90 ${
-                      visibleSection === "my-work"
-                        ? "dark:text-white text-mid rotate-90"
-                        : "dark:text-dark text-light rotate-0"
-                    }`}
+                    className={`fill-current origin-center transform transition duration-200 ease-in-out group-hover:text-dark dark:group-hover:text-white group-hover:rotate-90 ${visibleSection === "my-work"
+                      ? "dark:text-white text-mid rotate-90"
+                      : "dark:text-dark text-light rotate-0"
+                      }`}
                     d="M5.64 5.64h12.73v12.73H5.64z"
                   />
                   {/* Border */}
                   <path
-                    className={`fill-current origin-center transform transition duration-500 ease-in-out dark:group-hover:text-white group-hover:text-dark group-hover:rotate-45 group-hover:opacity-100 ${
-                      visibleSection === "my-work"
-                        ? "dark:text-white text-dark rotate-45 opacity-100"
-                        : "dark:text-white text-light rotate-45"
-                    }`}
+                    className={`fill-current origin-center transform transition duration-500 ease-in-out dark:group-hover:text-white group-hover:text-dark group-hover:rotate-45 group-hover:opacity-100 ${visibleSection === "my-work"
+                      ? "dark:text-white text-dark rotate-45 opacity-100"
+                      : "dark:text-white text-light rotate-45"
+                      }`}
                     d="M12 22.41L1.59 12 12 1.59 22.41 12zM4.41 12L12 19.59 19.59 12 12 4.41z"
                   />
                 </svg>
@@ -1457,11 +1501,10 @@ export default function Home({ publications }) {
               >
                 <svg
                   id="e5c888e5-3206-4553-8f53-60ee93248ad9"
-                  className={`group rounded-sm transform transition duration-500 ease-in-out hover:rotate-45 hover:scale-110 ${
-                    visibleSection === "blog"
-                      ? "rotate-45 scale-110"
-                      : "rotate-0 scale-100"
-                  }`}
+                  className={`group rounded-sm transform transition duration-500 ease-in-out hover:rotate-45 hover:scale-110 ${visibleSection === "blog"
+                    ? "rotate-45 scale-110"
+                    : "rotate-0 scale-100"
+                    }`}
                   data-name="Layer 1"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0
@@ -1469,20 +1512,18 @@ export default function Home({ publications }) {
                 >
                   {/* Fill */}
                   <path
-                    className={`fill-current origin-center transform transition duration-200 ease-in-out group-hover:text-dark dark:group-hover:text-white group-hover:rotate-90 ${
-                      visibleSection === "blog"
-                        ? "dark:text-white text-mid rotate-90"
-                        : "dark:text-dark text-light rotate-0"
-                    }`}
+                    className={`fill-current origin-center transform transition duration-200 ease-in-out group-hover:text-dark dark:group-hover:text-white group-hover:rotate-90 ${visibleSection === "blog"
+                      ? "dark:text-white text-mid rotate-90"
+                      : "dark:text-dark text-light rotate-0"
+                      }`}
                     d="M5.64 5.64h12.73v12.73H5.64z"
                   />
                   {/* Border */}
                   <path
-                    className={`fill-current origin-center transform transition duration-500 ease-in-out dark:group-hover:text-white group-hover:text-dark group-hover:rotate-45 group-hover:opacity-100 ${
-                      visibleSection === "blog"
-                        ? "dark:text-white text-dark rotate-45 opacity-100"
-                        : "dark:text-white text-light rotate-45"
-                    }`}
+                    className={`fill-current origin-center transform transition duration-500 ease-in-out dark:group-hover:text-white group-hover:text-dark group-hover:rotate-45 group-hover:opacity-100 ${visibleSection === "blog"
+                      ? "dark:text-white text-dark rotate-45 opacity-100"
+                      : "dark:text-white text-light rotate-45"
+                      }`}
                     d="M12 22.41L1.59 12 12 1.59 22.41 12zM4.41 12L12 19.59 19.59 12 12 4.41z"
                   />
                 </svg>
@@ -1496,11 +1537,10 @@ export default function Home({ publications }) {
               >
                 <svg
                   id="e5c888e5-3206-4553-8f53-60ee93248ad9"
-                  className={`group rounded-sm transform  transition duration-500 ease-in-out hover:rotate-45 hover:scale-110 ${
-                    visibleSection === "contact"
-                      ? "rotate-45 scale-110"
-                      : "rotate-0 scale-100"
-                  }`}
+                  className={`group rounded-sm transform  transition duration-500 ease-in-out hover:rotate-45 hover:scale-110 ${visibleSection === "contact"
+                    ? "rotate-45 scale-110"
+                    : "rotate-0 scale-100"
+                    }`}
                   data-name="Layer 1"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0
@@ -1508,20 +1548,18 @@ export default function Home({ publications }) {
                 >
                   {/* Fill */}
                   <path
-                    className={`fill-current origin-center transform transition duration-200 ease-in-out group-hover:text-dark dark:group-hover:text-white group-hover:rotate-90 ${
-                      visibleSection === "contact"
-                        ? "dark:text-white text-mid rotate-90"
-                        : "dark:text-dark text-light rotate-0"
-                    }`}
+                    className={`fill-current origin-center transform transition duration-200 ease-in-out group-hover:text-dark dark:group-hover:text-white group-hover:rotate-90 ${visibleSection === "contact"
+                      ? "dark:text-white text-mid rotate-90"
+                      : "dark:text-dark text-light rotate-0"
+                      }`}
                     d="M5.64 5.64h12.73v12.73H5.64z"
                   />
                   {/* Border */}
                   <path
-                    className={`fill-current origin-center transform transition duration-500 ease-in-out dark:group-hover:text-white group-hover:text-dark group-hover:rotate-45 group-hover:opacity-100 ${
-                      visibleSection === "contact"
-                        ? "dark:text-white text-dark rotate-45 opacity-100"
-                        : "dark:text-white text-light rotate-45"
-                    }`}
+                    className={`fill-current origin-center transform transition duration-500 ease-in-out dark:group-hover:text-white group-hover:text-dark group-hover:rotate-45 group-hover:opacity-100 ${visibleSection === "contact"
+                      ? "dark:text-white text-dark rotate-45 opacity-100"
+                      : "dark:text-white text-light rotate-45"
+                      }`}
                     d="M12 22.41L1.59 12 12 1.59 22.41 12zM4.41 12L12 19.59 19.59 12 12 4.41z"
                   />
                 </svg>

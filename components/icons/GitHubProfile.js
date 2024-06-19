@@ -4,12 +4,12 @@ const GitHubProfile = ({ marginBottom }) => {
   return (
     <div className={`w-8 h-8 ${marginBottom}`}>
       <a
-        href="https://github.com/danielcranney"
+        href="https://github.com/atulbhatt-system32"
         target="_blank"
         rel="noreferrer"
       >
         <svg
-          className="dark:text-white text-dark transition-all duration-300 ease-in-out transform translate-y-0 dark:opacity-50 fill-current dark:hover:opacity-100 hover:-translate-y-1"
+          className="transition-all duration-300 ease-in-out transform translate-y-0 fill-current dark:text-white text-dark dark:opacity-50 dark:hover:opacity-100 hover:-translate-y-1"
           xmlns="http://www.w3.org/2000/svg"
           width="32"
           height="32"
