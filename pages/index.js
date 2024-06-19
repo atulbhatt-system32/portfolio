@@ -32,8 +32,8 @@ import LinkedInProfile from "../components/icons/LinkedInProfile";
 import FeaturedProjectCard from "../components/FeaturedProjectCard";
 
 // Blog Components
-import BlogList from "../components/blog/BlogList";
-import BlogItem from "../components/blog/BlogItem";
+// import BlogList from "../components/blog/BlogList";
+// import BlogItem from "../components/blog/BlogItem";
 
 // Dark Mode
 import { useTheme } from "next-themes";
@@ -300,7 +300,7 @@ export default function Home({ publications }) {
                     My Work
                   </button>
                 </li>
-                <li className="z-50 block py-2 list-none lg:inline-block">
+                {/* <li className="z-50 block py-2 list-none lg:inline-block">
                   <button
                     href="#"
                     target="_blank"
@@ -316,7 +316,7 @@ export default function Home({ publications }) {
                   >
                     Blog
                   </button>
-                </li>
+                </li> */}
                 <li className="z-50 block py-2 list-none lg:inline-block">
                   <button
                     href="#"
@@ -414,7 +414,7 @@ export default function Home({ publications }) {
                     My Work
                   </button>
                 </li>
-                <li className="z-50 hidden mx-5 list-none lg:inline-block">
+                {/* <li className="z-50 hidden mx-5 list-none lg:inline-block">
                   <button
                     href="#"
                     target="_blank"
@@ -427,7 +427,7 @@ export default function Home({ publications }) {
                   >
                     Blog
                   </button>
-                </li>
+                </li> */}
                 <li className="z-50 hidden mx-5 list-none lg:inline-block">
                   <button
                     href="#"
@@ -1315,10 +1315,10 @@ export default function Home({ publications }) {
             </div>
 
             <div className="flex flex-col items-start md:flex-row">
-              <p className="w-auto mb-4 md:mb-0">
+              {/* <p className="w-auto mb-4 md:mb-0">
                 &copy; {new Date().getFullYear()} - Designed and built by Daniel
                 Cranney
-              </p>
+              </p> */}
 
               <div className="flex md:hidden">
                 <span className="mr-2">
@@ -1575,29 +1575,5 @@ export default function Home({ publications }) {
   );
 }
 
-// export async function getServerSideProps(context) {
-//   const res = await fetch("https://api.hashnode.com/", {
-//     method: "POST",
-//     headers: {
-//       "Content-Type": "application/json",
-//       Authorization: "32ab9fe7-0331-4efc-bdb8-5a3e0bfdd9b9",
-//     },
-//     body: JSON.stringify({
-//       query:
-//         'query {user(username: "danielcranney") {publication {posts(page: 0) {title brief slug coverImage dateAdded}}}}',
-//     }),
-//   });
-//   const publications = await res.json();
 
-//   if (!publications) {
-//     return {
-//       notFound: true,
-//     };
-//   }
 
-//   return {
-//     props: {
-//       publications,
-//     },
-//   };
-// }

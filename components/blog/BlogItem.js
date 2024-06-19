@@ -25,6 +25,7 @@ export default function BlogItem({ post }) {
           layout="responsive"
           width={1080}
           height={567}
+          alt={post.title}
         />
       </div>
       <div className="flex flex-col px-2 gap-y-1.5">
@@ -33,12 +34,12 @@ export default function BlogItem({ post }) {
           {formattedDate}
         </h6>
         <p className="mb-0">{post.brief.substr(0, 150)}...</p>
-        <p className="btn-xs btn-brand self-start mt-3">Read more</p>
+        <p className="self-start mt-3 btn-xs btn-brand">Read more</p>
       </div>
-      <div className="w-full h-full absolute dark:bg-dark/80 bg-white/80 opacity-0 group-hover:opacity-100 top-0 left-0 z-50 transition-all duration-150 ease-in-out">
-        <div className="flex w-full h-full items-center justify-center">
+      <div className="absolute top-0 left-0 z-50 w-full h-full transition-all duration-150 ease-in-out opacity-0 dark:bg-dark/80 bg-white/80 group-hover:opacity-100">
+        <div className="flex items-center justify-center w-full h-full">
           <div className="btn-sm btn-brand rounded-sm flex items-center gap-x-1.5">
-            <p className="mb-0 dark:text-white text-white">Open</p>
+            <p className="mb-0 text-white dark:text-white">Open</p>
             <svg
               className="w-5 h-5"
               fill="none"
