@@ -14,16 +14,9 @@ import Bootstrap from "../components/icons/Bootstrap";
 import Sass from "../components/icons/Sass";
 import ReactJs from "../components/icons/ReactJs";
 import NextJs from "../components/icons/NextJs";
-import NodeJs from "../components/icons/NodeJs";
-import Firebase from "../components/icons/Firebase";
 import Figma from "../components/icons/Figma";
-import Photoshop from "../components/icons/Photoshop";
-import Illustrator from "../components/icons/Illustrator";
-import AfterEffects from "../components/icons/AfterEffects";
 import AdobeXd from "../components/icons/AdobeXd";
-import Supabase from "../components/icons/Supabase";
-import MongoDb from "../components/icons/MongoDb";
-import Express from "../components/icons/Express";
+
 // Project Card
 import ProjectCard from "../components/ProjectCard";
 import GitHubProfile from "../components/icons/GitHubProfile";
@@ -40,6 +33,7 @@ import { useTheme } from "next-themes";
 
 import { projects } from "../utils/constants";
 import NewIcon from "../components/NewIcon";
+
 
 const getDimensions = (ele) => {
   const { height } = ele.getBoundingClientRect();
@@ -84,6 +78,7 @@ export default function Home({ publications }) {
   const myWorkRef = useRef(null);
   const blogRef = useRef(null);
   const contactRef = useRef(null);
+  const testimonialsRef = useRef(null);
 
   useEffect(() => {
     const sectionRefs = [
@@ -93,6 +88,7 @@ export default function Home({ publications }) {
       { section: "my-work", ref: myWorkRef, id: 4 },
       { section: "blog", ref: blogRef, id: 5 },
       { section: "contact", ref: contactRef, id: 6 },
+      { section: "testimonials", ref: testimonialsRef, id: 7 },
     ];
 
     const handleScroll = () => {
@@ -300,23 +296,23 @@ export default function Home({ publications }) {
                     My Work
                   </button>
                 </li>
-                {/* <li className="z-50 block py-2 list-none lg:inline-block">
+                <li className="z-50 block py-2 list-none lg:inline-block">
                   <button
                     href="#"
                     target="_blank"
                     rel="noreferrer"
-                    className={`header_link text-xl font-semibold transition-all duration-150 ease-in-out ${visibleSection === "blog"
+                    className={`header_link text-xl font-semibold transition-all duration-150 ease-in-out ${visibleSection === "testimonials"
                       ? "current"
                       : "dark:text-light dark:hover:text-white text-mid hover:text-mid border-b-2 border-transparent"
                       }`}
                     onClick={() => {
                       setNavbarOpen(false);
-                      scrollTo(blogRef.current);
+                      scrollTo(testimonialsRef.current);
                     }}
                   >
-                    Blog
+                    Testimonials
                   </button>
-                </li> */}
+                </li>
                 <li className="z-50 block py-2 list-none lg:inline-block">
                   <button
                     href="#"
@@ -414,20 +410,20 @@ export default function Home({ publications }) {
                     My Work
                   </button>
                 </li>
-                {/* <li className="z-50 hidden mx-5 list-none lg:inline-block">
+                <li className="z-50 hidden mx-5 list-none lg:inline-block">
                   <button
                     href="#"
                     target="_blank"
                     rel="noreferrer"
-                    className={`nav-item ${visibleSection === "blog" ? "current" : "active"
+                    className={`nav-item ${visibleSection === "testimonials" ? "current" : "active"
                       }`}
                     onClick={() => {
-                      scrollTo(blogRef.current);
+                      scrollTo(testimonialsRef.current);
                     }}
                   >
-                    Blog
+                    Testimonials
                   </button>
-                </li> */}
+                </li>
                 <li className="z-50 hidden mx-5 list-none lg:inline-block">
                   <button
                     href="#"
@@ -1255,6 +1251,117 @@ export default function Home({ publications }) {
             <BlogList publications={publications} />
           </section> */}
 
+
+          {/* Testimonials */}
+          <section className="w-full max-w-6xl mx-auto"
+            id="testimonials"
+            ref={testimonialsRef}
+          >
+            <div className="max-w-xl mx-auto text-center">
+              <h1 className="mb-5 text-6xl font-bold text-gray-600 md:text-7xl">What people <br />are saying.</h1>
+              <h3 className="mb-5 text-xl font-light">Here are some testimonials from the people I worked for.</h3>
+              <div className="mb-10 text-center">
+                <span className="inline-block w-1 h-1 ml-1 bg-indigo-500 rounded-full"></span>
+                <span className="inline-block w-3 h-1 ml-1 bg-indigo-500 rounded-full"></span>
+                <span className="inline-block w-40 h-1 bg-indigo-500 rounded-full"></span>
+                <span className="inline-block w-3 h-1 ml-1 bg-indigo-500 rounded-full"></span>
+                <span className="inline-block w-1 h-1 ml-1 bg-indigo-500 rounded-full"></span>
+              </div>
+            </div>
+            <div className="items-start -mx-3 md:flex">
+              <div className="px-3 md:w-1/3">
+                <div className="w-full p-5 mx-auto mb-6 font-light text-gray-800 bg-white border border-gray-200 rounded-lg">
+                  <div className="flex items-center w-full mb-4">
+                    <div className="w-10 h-10 overflow-hidden border border-gray-200 rounded-full bg-gray-50">
+                      <Image src="/testimonials/eden.jpeg" alt="" width={100} height={100} />
+                    </div>
+                    <div className="flex-grow pl-3">
+                      <span className="text-sm font-bold text-gray-600 uppercase">Eden Vidal</span>
+                    </div>
+                  </div>
+                  <div className="w-full">
+                    <span className="text-sm leading-tight"><span className="mr-1 text-lg italic font-bold leading-none text-gray-400">&quot;</span>Working with Atul was always a delight. His exceptional communication skills, timely delivery of great work, and strong skills made him a pleasure to collaborate with. His curiosity and willingness to step outside his expertise made him a valuable asset to any project. I especially enjoyed working with him on a hyper-experimental project and would happily work with him again.<span className="ml-1 text-lg italic font-bold leading-none text-gray-400">&quot;</span></span>
+                  </div>
+                </div>
+                <div className="w-full p-5 mx-auto mb-6 font-light text-gray-800 bg-white border border-gray-200 rounded-lg">
+                  <div className="flex items-center w-full mb-4">
+                    <div className="w-10 h-10 overflow-hidden border border-gray-200 rounded-full bg-gray-50">
+                      <Image src="/testimonials/rajesh.jpg" alt="" width={100} height={100} />
+                    </div>
+                    <div className="flex-grow pl-3">
+                      <span className="text-sm font-bold text-gray-600 uppercase">Rajesh Durai</span>
+                    </div>
+                  </div>
+                  <div className="w-full">
+                    <span className="text-sm leading-tight"><span className="mr-1 text-lg italic font-bold leading-none text-gray-400">&quot;</span>We hired Atul for one of our web-based projects. He took the time to understand my needs and provided me with a customized solution that exceeded my expectations. Overall, I would highly recommend working with Atul for any web related projects.<span className="ml-1 text-lg italic font-bold leading-none text-gray-400">&quot;</span></span>
+                  </div>
+                </div>
+              </div>
+              <div className="px-3 md:w-1/3">
+                <div className="w-full p-5 mx-auto mb-6 font-light text-gray-800 bg-white border border-gray-200 rounded-lg">
+                  <div className="flex items-center w-full mb-4">
+                    <div className="w-10 h-10 overflow-hidden border border-gray-200 rounded-full bg-gray-50">
+                      <Image src="/testimonials/saswat.jpeg" alt="" width={100} height={100} />
+                    </div>
+                    <div className="flex-grow pl-3">
+                      <span className="text-sm font-bold text-gray-600 uppercase">Saswat Panda</span>
+                    </div>
+                  </div>
+                  <div className="w-full">
+                    <span className="text-sm leading-tight"><span className="mr-1 text-lg italic font-bold leading-none text-gray-400">&quot;</span>I brought Atul onboard my pre-seed startup as a contract frontend developer in 2023. Though early in his career and lacking experience, he more than made up for it with his drive, efficiency, reliability and, a positive attitude. We had some tight deadlines, but Atul always delivered, generally with the level of quality you&apos;d expect from someone with more grey hairs. All with a bright smile on his face. I&apos;d love for the opportunity to work with Atul again.<span className="ml-1 text-lg italic font-bold leading-none text-gray-400">&quot;</span></span>
+                  </div>
+                </div>
+                <div className="w-full p-5 mx-auto mb-6 font-light text-gray-800 bg-white border border-gray-200 rounded-lg">
+                  <div className="flex items-center w-full mb-4">
+                    <div className="w-10 h-10 overflow-hidden border border-gray-200 rounded-full bg-gray-50">
+                      <Image src="/testimonials/sreeja.jpg" alt="" width={100} height={100} />
+
+                    </div>
+                    <div className="flex-grow pl-3">
+                      <span className="text-sm font-bold text-gray-600 uppercase">Sreeja</span>
+                    </div>
+                  </div>
+                  <div className="w-full">
+                    <span className="text-sm leading-tight"><span className="mr-1 text-lg italic font-bold leading-none text-gray-400">&quot;</span>Atul is self motivated and an exceptional learner. He has worked on a very complex module and made it exactly as per the requirements.  It is a pleasure working with Atul and he is an asset to any team.<span className="ml-1 text-lg italic font-bold leading-none text-gray-400">&quot;</span></span>
+                  </div>
+                </div>
+              </div>
+              <div className="px-3 md:w-1/3">
+                <div className="w-full p-5 mx-auto mb-6 font-light text-gray-800 bg-white border border-gray-200 rounded-lg">
+                  <div className="flex items-center w-full mb-4">
+                    <div className="w-10 h-10 overflow-hidden border border-gray-200 rounded-full bg-gray-50">
+                      <Image src="/testimonials/prakhar.jpg"
+                        alt="" width={100} height={100} />
+                    </div>
+                    <div className="flex-grow pl-3">
+                      <span className="text-sm font-bold text-gray-600 uppercase">Prakhar</span>
+                    </div>
+                  </div>
+                  <div className="w-full">
+                    <span className="text-sm leading-tight"><span className="mr-1 text-lg italic font-bold leading-none text-gray-400">&quot;</span>Atul is a good professional to work with. He is a dedicated professional and a talented colleague . I worked with him on variety of projects where he show case his strengths and capabilities.<span className="ml-1 text-lg italic font-bold leading-none text-gray-400">&quot;</span></span>
+                  </div>
+                </div>
+                <div className="w-full p-5 mx-auto mb-6 font-light text-gray-800 bg-white border border-gray-200 rounded-lg">
+                  <div className="flex items-center w-full mb-4">
+                    <div className="w-10 h-10 overflow-hidden border border-gray-200 rounded-full bg-gray-50">
+                      <Image src="/testimonials/karan.jpg"
+                        alt="" width={100} height={100} />
+                    </div>
+                    <div className="flex-grow pl-3">
+                      <span className="text-sm font-bold text-gray-600 uppercase">Karan</span>
+                    </div>
+                  </div>
+                  <div className="w-full">
+                    <span className="text-sm leading-tight"><span className="mr-1 text-lg italic font-bold leading-none text-gray-400">&quot;</span>We reached out to Atul for our website and the entire process of handout was very very smooth. He committed to a timeline of around 7 days and I had the website in 3 days.<span className="ml-1 text-lg italic font-bold leading-none text-gray-400">&quot;</span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+
           {/* Contact */}
           <section
             className="flex flex-col w-full px-0 md:px-20 lg:px-24 py-28 section"
@@ -1496,7 +1603,7 @@ export default function Home({ publications }) {
               <button
                 className="w-5 h-5 mb-4"
                 onClick={() => {
-                  scrollTo(blogRef.current);
+                  scrollTo(testimonialsRef.current);
                 }}
               >
                 <svg
