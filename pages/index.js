@@ -438,7 +438,7 @@ export default function Home({ publications }) {
                 </li>
                 <li className="z-50 hidden ml-5 list-none lg:inline-block">
                   <a
-                    href={`mailto:danielcranney@gmail.com`}
+                    href={`mailto:mratulbhatt97.com`}
                     className="btn-brand btn-md group"
                   >
                     Hire me
