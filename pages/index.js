@@ -772,6 +772,87 @@ export default function Home({ publications }) {
 
             {/* Featured Projects Container */}
             <div className="flex flex-col w-full mb-12">
+
+              {/* Project One */}
+              <FeaturedProjectCard
+                title={"ARBC.in"}
+                status={"Live"}
+                description={`Accounting, Tax and Certifications for your business and personal needs.`}
+                float={`right-0`}
+                flexDirection={`flex-col lg:flex-row-reverse`}
+                imgWidth={"1366"}
+                imgHeight={"666"}
+                imgSrc={"/projects/arbc.png"}
+                liveLink={"https://www.arbc.in/"}
+                repoLink={null}
+                stack={
+                  <>
+                    <Icon
+                      IconType={Html}
+                      title="HTML"
+                      columnSizing={"w-auto"}
+                      width={"w-6"}
+                      height={"h-6"}
+                      flexDirection={"flex-row"}
+                      padding={"p-0"}
+                      titleMargins={"my-0 ml-1"}
+                      titleSize={"text-sm"}
+                      marginBottom={"mb-4"}
+                      marginRight={"mr-3"}
+                      textTransform={"uppercase"}
+                      fixedHeight={"h-auto"}
+                    />
+
+                    <Icon
+                      IconType={Css}
+                      title="CSS"
+                      columnSizing={"w-auto"}
+                      width={"w-6"}
+                      height={"h-6"}
+                      flexDirection={"flex-row"}
+                      padding={"p-0"}
+                      titleMargins={"my-0 ml-1"}
+                      titleSize={"text-sm"}
+                      marginBottom={"mb-4"}
+                      marginRight={"mr-3"}
+                      textTransform={"uppercase"}
+                      fixedHeight={"h-auto"}
+                    />
+
+                    <Icon
+                      IconType={NextJs}
+                      title="React"
+                      columnSizing={"w-auto"}
+                      width={"w-6"}
+                      height={"h-6"}
+                      flexDirection={"flex-row"}
+                      padding={"p-0"}
+                      titleMargins={"my-0 ml-1"}
+                      titleSize={"text-sm"}
+                      marginBottom={"mb-4"}
+                      marginRight={"mr-3"}
+                      textTransform={"uppercase"}
+                      fixedHeight={"h-auto"}
+                    />
+
+                    <Icon
+                      IconType={Figma}
+                      title="React"
+                      columnSizing={"w-auto"}
+                      width={"w-6"}
+                      height={"h-6"}
+                      flexDirection={"flex-row"}
+                      padding={"p-0"}
+                      titleMargins={"my-0 ml-1"}
+                      titleSize={"text-sm"}
+                      marginBottom={"mb-4"}
+                      marginRight={"mr-3"}
+                      textTransform={"uppercase"}
+                      fixedHeight={"h-auto"}
+                    />
+                  </>
+                }
+              />
               {/* Project One */}
               <FeaturedProjectCard
                 title={"Rainbow"}
