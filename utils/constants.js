@@ -39,7 +39,7 @@ export const projects = [
     overview:
       "A platform that summarizes the meeting minutes and action items for the team and allows to query the meeting using AI.",
     stack: ["React", "Redux", "SaSS"],
-    link: "https://samadhan.tech",
+    link: null,
     repo: null,
     isSiteLive: true,
   }
