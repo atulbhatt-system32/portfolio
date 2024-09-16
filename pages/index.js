@@ -1441,20 +1441,6 @@ export default function Home({ publications }) {
                 <div className="w-full p-5 mx-auto mb-6 font-light text-gray-800 bg-white border border-gray-200 rounded-lg">
                   <div className="flex items-center w-full mb-4">
                     <div className="w-10 h-10 overflow-hidden border border-gray-200 rounded-full bg-gray-50">
-                      <Image src="/testimonials/prakhar.jpg"
-                        alt="" width={100} height={100} />
-                    </div>
-                    <div className="flex-grow pl-3">
-                      <span className="text-sm font-bold text-gray-600 uppercase">Prakhar</span>
-                    </div>
-                  </div>
-                  <div className="w-full">
-                    <span className="text-sm leading-tight"><span className="mr-1 text-lg italic font-bold leading-none text-gray-400">&quot;</span>Atul is a good professional to work with. He is a dedicated professional and a talented colleague . I worked with him on variety of projects where he show case his strengths and capabilities.<span className="ml-1 text-lg italic font-bold leading-none text-gray-400">&quot;</span></span>
-                  </div>
-                </div>
-                <div className="w-full p-5 mx-auto mb-6 font-light text-gray-800 bg-white border border-gray-200 rounded-lg">
-                  <div className="flex items-center w-full mb-4">
-                    <div className="w-10 h-10 overflow-hidden border border-gray-200 rounded-full bg-gray-50">
                       <Image src="/testimonials/arbc.webp"
                         alt="" width={100} height={100} />
                     </div>
@@ -1464,8 +1450,8 @@ export default function Home({ publications }) {
                   </div>
                   <div className="w-full">
                     <span className="text-sm leading-tight"><span className="mr-1 text-lg italic font-bold leading-none text-gray-400">&quot;</span>
-                      I had the pleasure of working with Atul on the design and development of our company’s website, and I can’t recommend him highly enough. Atul’s expertise in web design is evident from the moment you see his work. He combines a deep understanding of user experience with a keen eye for aesthetics, resulting in a website that is not only visually stunning but also highly functional.experience.
-                      His attention to detail, creativity, and problem-solving skills were apparent throughout the project. He was also incredibly responsive and open to feedback, making the whole process smooth and enjoyable.
+                      I had the pleasure of working with Atul on the design and development of our company’s website, and I can’t recommend him highly enough. Atul’s expertise in web design is evident from the moment you see his work. He combines a deep understanding of user experience with a keen eye for aesthetics.
+                      He was also incredibly responsive and open to feedback, making the whole process smooth and enjoyable.
                       <span className="ml-1 text-lg italic font-bold leading-none text-gray-400">&quot;</span></span>
                   </div>
                 </div>
