@@ -104,3 +104,54 @@ export const shopifyProjects = [
     description: "Science-based recovery drinks designed to replenish your body after a night out."
   }
 ];
+
+export const shopifyVideos = [
+  {
+    title: "How to Create Product Packages and Setting Dynamic Shipping Rates In Shopify",
+    id: "2-Z_lZxd3_8"
+  },
+  {
+    title: "How to Add Judge.me widgets and style them",
+    id: "c5eGyQqOBbg"
+  },
+  {
+    title: "Install & Configure Judge.me in Shopify – Collect & Show Customer Reviews",
+    id: "sQTov44RTQU"
+  },
+  {
+    title: "Shopify Tutorial: Setup Microsoft Clarity in Minutes (2026 Edition)",
+    id: "YYbcK9iRHBQ"
+  },
+  {
+    title: "How to Import a Shopify Theme from GitHub (Step-by-Step Tutorial)",
+    id: "XcMrwA5PLKo"
+  },
+  {
+    title: "Shopify Collaborator Access Explained: Requesting & Giving Access Easily",
+    id: "Fm-CHjCPbPc"
+  },
+  {
+    title: "How to Create and Update Policy Pages In Shopify",
+    id: "l122OBbEmVE"
+  },
+  {
+    title: "How to Duplicate a Product & Update Variants in Shopify",
+    id: "CkhdqJdHLcQ"
+  },
+  {
+    title: "How to Purchase a Store Plan in Shopify | Basic Plan Step-by-Step",
+    id: "qeNDwoseZ3g"
+  },
+  {
+    title: "How to Add Products, Create Variants & Set Compare-At Prices in Shopify",
+    id: "0EBASbgfVUg"
+  },
+  {
+    title: "Re connecting a domain to new Shopify Store",
+    id: "ofQY-dX2WPQ"
+  },
+  {
+    title: "Adding Domain To Shopify from Hostinger",
+    id: "GX7S3_2dXwA"
+  }
+];

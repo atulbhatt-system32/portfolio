@@ -3,7 +3,7 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { shopifyProjects } from "../utils/constants";
+import { shopifyProjects, shopifyVideos } from "../utils/constants";
 import ShopifyProjectCard from "../components/ShopifyProjectCard";
 import { useTheme } from "next-themes";
 
@@ -80,6 +80,42 @@ export default function ShopifyPortfolio() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">
                         {shopifyProjects.map((project, index) => (
                             <ShopifyProjectCard key={index} project={project} index={index} />
+                        ))}
+                    </div>
+                </section>
+
+                {/* YouTube Playlist Section as Grid */}
+                <section className="max-w-7xl mx-auto px-6 mt-32">
+                    <div className="flex items-end justify-between mb-12 border-b border-gray-200 dark:border-gray-800 pb-4">
+                        <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">Shopify Tutorials</h2>
+                        <span className="text-sm text-gray-500 dark:text-gray-400">{shopifyVideos.length} Videos</span>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {shopifyVideos.map((video, index) => (
+                            <motion.div
+                                key={index}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: index * 0.1 }}
+                                viewport={{ once: true }}
+                                className="group"
+                            >
+                                <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-900">
+                                    <iframe
+                                        className="w-full h-full"
+                                        src={`https://www.youtube.com/embed/${video.id}`}
+                                        title={video.title}
+                                        frameBorder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowFullScreen
+                                        loading="lazy"
+                                    ></iframe>
+                                </div>
+                                <h3 className="mt-4 text-lg font-medium text-gray-900 dark:text-white leading-snug group-hover:text-brand transition-colors line-clamp-2">
+                                    {video.title}
+                                </h3>
+                            </motion.div>
                         ))}
                     </div>
                 </section>
