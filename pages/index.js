@@ -1,8 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import ReactTypingEffect from "react-typing-effect";
+import TypingEffect from "../components/TypingEffect";
+
 
 import Icon from "../components/Icon";
 // Icons
@@ -519,11 +520,7 @@ export default function Home({ publications }) {
                   Atul Bhatt
                 </h1>
                 <h2 className="mb-4 text-3xl md:text-4xl dark:text-light text-mid">
-                  <ReactTypingEffect
-                    typingDelay={200}
-                    speed={30}
-                    eraseSpeed={30}
-                    eraseDelay={1500}
+                  <TypingEffect
                     text={[
                       "Developer",
                       "Technical Blogger",

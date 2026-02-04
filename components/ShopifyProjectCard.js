@@ -19,9 +19,11 @@ const ShopifyProjectCard = ({ project, index }) => {
     }, [project.youtubeId]);
 
     React.useEffect(() => {
-        const isTouchDevice = window.matchMedia('(hover: none)').matches;
+        // Use viewport width to safely detect mobile context for auto-play
+        // helping ensure it doesn't trigger on desktop but triggers reliably on mobile
+        const isMobile = window.innerWidth < 768;
 
-        if (isTouchDevice && cardRef.current) {
+        if (isMobile && cardRef.current) {
             const observer = new IntersectionObserver(
                 (entries) => {
                     entries.forEach((entry) => {
@@ -33,7 +35,7 @@ const ShopifyProjectCard = ({ project, index }) => {
                     });
                 },
                 {
-                    threshold: 0.6 // Play when 60% of the card is visible
+                    threshold: 0.5 // Slightly more sensitive (50% visibility)
                 }
             );
 
