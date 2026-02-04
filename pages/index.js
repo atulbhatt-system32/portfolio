@@ -328,6 +328,16 @@ export default function Home({ publications }) {
                     Contact
                   </button>
                 </li>
+                <li className="z-50 block py-2 list-none lg:inline-block">
+                  <Link href="/shopify">
+                    <span
+                      className="header_link text-xl font-semibold transition-all duration-150 ease-in-out cursor-pointer dark:text-light dark:hover:text-white text-mid hover:text-mid border-b-2 border-transparent"
+                      onClick={() => setNavbarOpen(false)}
+                    >
+                      Shopify
+                    </span>
+                  </Link>
+                </li>
                 <li className="z-40 block py-2 mt-6 list-none lg:inline-block">
                   <a
                     href={`mailto:mratulbhatt97@gmail.com`}
@@ -435,6 +445,13 @@ export default function Home({ publications }) {
                   >
                     Contact
                   </button>
+                </li>
+                <li className="z-50 hidden mx-5 list-none lg:inline-block">
+                  <Link href="/shopify">
+                    <button className="nav-item active">
+                      Shopify
+                    </button>
+                  </Link>
                 </li>
                 <li className="z-50 hidden ml-5 list-none lg:inline-block">
                   <a
