@@ -17,6 +17,7 @@ import ReactJs from "../components/icons/ReactJs";
 import NextJs from "../components/icons/NextJs";
 import Figma from "../components/icons/Figma";
 import AdobeXd from "../components/icons/AdobeXd";
+import Shopify from "../components/icons/Shopify";
 
 // Project Card
 import ProjectCard from "../components/ProjectCard";
@@ -706,6 +707,22 @@ export default function Home({ publications }) {
               />
 
 
+              {/* Shopify */}
+              <Icon
+                IconType={Shopify}
+                title="Shopify"
+                width={"w-16"}
+                height={"h-16"}
+                padding={"p-0"}
+                flexDirection={"flex-col"}
+                titleMargins={"mt-4"}
+                titleSize={"text-sm sm:text-sm"}
+                marginBottom={"mb-4"}
+                marginRight={"mr-0"}
+                textTransform={"normal-case"}
+                fixedHeight={"h-28"}
+              />
+
               {/* Sass */}
               <Icon
                 IconType={Sass}
@@ -787,17 +804,17 @@ export default function Home({ publications }) {
             {/* Featured Projects Container */}
             <div className="flex flex-col w-full mb-12">
 
-              {/* Project One */}
+              {/* Project Seven */}
               <FeaturedProjectCard
-                title={"ARBC.in"}
-                status={"Live"}
-                description={`Accounting, Tax and Certifications for your business and personal needs.`}
+                title={"PayuBuzz"}
+                status={"Launched (Internal Use)"}
+                description={`Intranet Portal developed in SharePoint SPFx for Payu India`}
                 float={`right-0`}
-                flexDirection={`flex-col lg:flex-row-reverse`}
+                flexDirection={`flex-col lg:flex-row`}
                 imgWidth={"1366"}
                 imgHeight={"666"}
-                imgSrc={"/projects/arbc.png"}
-                liveLink={"https://www.arbc.in/"}
+                imgSrc={"/projects/payu.png"}
+                liveLink={null}
                 repoLink={null}
                 stack={
                   <>
@@ -817,101 +834,6 @@ export default function Home({ publications }) {
                       fixedHeight={"h-auto"}
                     />
 
-                    <Icon
-                      IconType={Css}
-                      title="CSS"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
-
-                    <Icon
-                      IconType={NextJs}
-                      title="React"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
-
-                    <Icon
-                      IconType={Figma}
-                      title="React"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
-                  </>
-                }
-              />
-              {/* Project One */}
-              <FeaturedProjectCard
-                title={"Rainbow"}
-                status={"V0.1 Just Launched (Open Source)"}
-                description={`modern design and code editor`}
-                float={`right-0`}
-                flexDirection={`flex-col lg:flex-row`}
-                imgWidth={"1366"}
-                imgHeight={"666"}
-                imgSrc={"/projects/rnbw.png"}
-                liveLink={"https://rnbw.design"}
-                repoLink={"https://github.com/rnbwdev/rnbw"}
-                stack={
-                  <>
-                    <Icon
-                      IconType={Html}
-                      title="HTML"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
-
-                    <Icon
-                      IconType={Css}
-                      title="CSS"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
 
                     <Icon
                       IconType={ReactJs}
@@ -928,89 +850,22 @@ export default function Home({ publications }) {
                       textTransform={"uppercase"}
                       fixedHeight={"h-auto"}
                     />
+
                   </>
                 }
               />
 
-              {/* Project Two */}
+              {/* Project Six */}
               <FeaturedProjectCard
-                title={"HTTP Status Insight"}
-                status={"Live (Open Source)"}
-                description={`Decoding HTTP with Status Code Insight`}
+                title={"SourceBae"}
+                status={"Live"}
+                description={`Build Your Remote Tech Team Within Just 24 Hours.`}
                 float={`right-0`}
                 flexDirection={`flex-col lg:flex-row-reverse`}
                 imgWidth={"1366"}
                 imgHeight={"666"}
-                imgSrc={"/projects/httpstatus.png"}
-                liveLink={"https://httpstatusinsight.netlify.app/"}
-                repoLink={"https://github.com/hiteshchoudhary/apihub"}
-                stack={
-                  <>
-                    <Icon
-                      IconType={Html}
-                      title="HTML"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
-
-                    <Icon
-                      IconType={Css}
-                      title="CSS"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
-
-                    <Icon
-                      IconType={ReactJs}
-                      title="React"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
-                  </>
-                }
-              />
-
-
-              {/* Project Three */}
-              <FeaturedProjectCard
-                title={"weareunder.design"}
-                status={"Live"}
-                description={`
-                Site for a design agency based in Israel
-                `}
-                float={`right-0`}
-                flexDirection={`flex-col lg:flex-row`}
-                imgWidth={"1366"}
-                imgHeight={"666"}
-                imgSrc={"/projects/under.png"}
-                liveLink={"https://weareunder.design/"}
+                imgSrc={"/projects/sourcebae.png"}
+                liveLink={"https://sourcebae.com/"}
                 repoLink={null}
                 stack={
                   <div className="flex gap-4">
@@ -1046,28 +901,9 @@ export default function Home({ publications }) {
                       fixedHeight={"h-auto"}
                     />
 
-                    Webflow
-
-                  </div>
-                }
-              />
-              {/* Project Four */}
-              <FeaturedProjectCard
-                title={"Tealbox.digital"}
-                status={"Live"}
-                description={`The Analytics & Performance Marketing Agency`}
-                float={`right-0`}
-                flexDirection={`flex-col lg:flex-row-reverse`}
-                imgWidth={"1366"}
-                imgHeight={"666"}
-                imgSrc={"/projects/tealbox.png"}
-                liveLink={"https://tealbox.digital"}
-                repoLink={null}
-                stack={
-                  <div className="flex gap-4">
                     <Icon
-                      IconType={Html}
-                      title="HTML"
+                      IconType={ReactJs}
+                      title="React"
                       columnSizing={"w-auto"}
                       width={"w-6"}
                       height={"h-6"}
@@ -1082,8 +918,8 @@ export default function Home({ publications }) {
                     />
 
                     <Icon
-                      IconType={Css}
-                      title="HTML"
+                      IconType={Sass}
+                      title="Sass"
                       columnSizing={"w-auto"}
                       width={"w-6"}
                       height={"h-6"}
@@ -1096,8 +932,6 @@ export default function Home({ publications }) {
                       textTransform={"uppercase"}
                       fixedHeight={"h-auto"}
                     />
-
-                    Webflow
 
                   </div>
                 }
@@ -1185,17 +1019,17 @@ export default function Home({ publications }) {
                 }
               />
 
-              {/* Project Six */}
+              {/* Project Four */}
               <FeaturedProjectCard
-                title={"SourceBae"}
+                title={"Tealbox.digital"}
                 status={"Live"}
-                description={`Build Your Remote Tech Team Within Just 24 Hours.`}
+                description={`The Analytics & Performance Marketing Agency`}
                 float={`right-0`}
                 flexDirection={`flex-col lg:flex-row-reverse`}
                 imgWidth={"1366"}
                 imgHeight={"666"}
-                imgSrc={"/projects/sourcebae.png"}
-                liveLink={"https://sourcebae.com/"}
+                imgSrc={"/projects/tealbox.png"}
+                liveLink={"https://tealbox.digital"}
                 repoLink={null}
                 stack={
                   <div className="flex gap-4">
@@ -1231,6 +1065,112 @@ export default function Home({ publications }) {
                       fixedHeight={"h-auto"}
                     />
 
+                    Webflow
+
+                  </div>
+                }
+              />
+
+              {/* Project Three */}
+              <FeaturedProjectCard
+                title={"weareunder.design"}
+                status={"Live"}
+                description={`
+                Site for a design agency based in Israel
+                `}
+                float={`right-0`}
+                flexDirection={`flex-col lg:flex-row`}
+                imgWidth={"1366"}
+                imgHeight={"666"}
+                imgSrc={"/projects/under.png"}
+                liveLink={"https://weareunder.design/"}
+                repoLink={null}
+                stack={
+                  <div className="flex gap-4">
+                    <Icon
+                      IconType={Html}
+                      title="HTML"
+                      columnSizing={"w-auto"}
+                      width={"w-6"}
+                      height={"h-6"}
+                      flexDirection={"flex-row"}
+                      padding={"p-0"}
+                      titleMargins={"my-0 ml-1"}
+                      titleSize={"text-sm"}
+                      marginBottom={"mb-4"}
+                      marginRight={"mr-3"}
+                      textTransform={"uppercase"}
+                      fixedHeight={"h-auto"}
+                    />
+
+                    <Icon
+                      IconType={Css}
+                      title="HTML"
+                      columnSizing={"w-auto"}
+                      width={"w-6"}
+                      height={"h-6"}
+                      flexDirection={"flex-row"}
+                      padding={"p-0"}
+                      titleMargins={"my-0 ml-1"}
+                      titleSize={"text-sm"}
+                      marginBottom={"mb-4"}
+                      marginRight={"mr-3"}
+                      textTransform={"uppercase"}
+                      fixedHeight={"h-auto"}
+                    />
+
+                    Webflow
+
+                  </div>
+                }
+              />
+
+              {/* Project Two */}
+              <FeaturedProjectCard
+                title={"HTTP Status Insight"}
+                status={"Live (Open Source)"}
+                description={`Decoding HTTP with Status Code Insight`}
+                float={`right-0`}
+                flexDirection={`flex-col lg:flex-row-reverse`}
+                imgWidth={"1366"}
+                imgHeight={"666"}
+                imgSrc={"/projects/httpstatus.png"}
+                liveLink={"https://httpstatusinsight.netlify.app/"}
+                repoLink={"https://github.com/hiteshchoudhary/apihub"}
+                stack={
+                  <>
+                    <Icon
+                      IconType={Html}
+                      title="HTML"
+                      columnSizing={"w-auto"}
+                      width={"w-6"}
+                      height={"h-6"}
+                      flexDirection={"flex-row"}
+                      padding={"p-0"}
+                      titleMargins={"my-0 ml-1"}
+                      titleSize={"text-sm"}
+                      marginBottom={"mb-4"}
+                      marginRight={"mr-3"}
+                      textTransform={"uppercase"}
+                      fixedHeight={"h-auto"}
+                    />
+
+                    <Icon
+                      IconType={Css}
+                      title="CSS"
+                      columnSizing={"w-auto"}
+                      width={"w-6"}
+                      height={"h-6"}
+                      flexDirection={"flex-row"}
+                      padding={"p-0"}
+                      titleMargins={"my-0 ml-1"}
+                      titleSize={"text-sm"}
+                      marginBottom={"mb-4"}
+                      marginRight={"mr-3"}
+                      textTransform={"uppercase"}
+                      fixedHeight={"h-auto"}
+                    />
+
                     <Icon
                       IconType={ReactJs}
                       title="React"
@@ -1246,10 +1186,27 @@ export default function Home({ publications }) {
                       textTransform={"uppercase"}
                       fixedHeight={"h-auto"}
                     />
+                  </>
+                }
+              />
 
+              {/* Project One */}
+              <FeaturedProjectCard
+                title={"Rainbow"}
+                status={"V0.1 Just Launched (Open Source)"}
+                description={`modern design and code editor`}
+                float={`right-0`}
+                flexDirection={`flex-col lg:flex-row`}
+                imgWidth={"1366"}
+                imgHeight={"666"}
+                imgSrc={"/projects/rnbw.png"}
+                liveLink={"https://rnbw.design"}
+                repoLink={"https://github.com/rnbwdev/rnbw"}
+                stack={
+                  <>
                     <Icon
-                      IconType={Sass}
-                      title="Sass"
+                      IconType={Html}
+                      title="HTML"
                       columnSizing={"w-auto"}
                       width={"w-6"}
                       height={"h-6"}
@@ -1263,21 +1220,52 @@ export default function Home({ publications }) {
                       fixedHeight={"h-auto"}
                     />
 
-                  </div>
+                    <Icon
+                      IconType={Css}
+                      title="CSS"
+                      columnSizing={"w-auto"}
+                      width={"w-6"}
+                      height={"h-6"}
+                      flexDirection={"flex-row"}
+                      padding={"p-0"}
+                      titleMargins={"my-0 ml-1"}
+                      titleSize={"text-sm"}
+                      marginBottom={"mb-4"}
+                      marginRight={"mr-3"}
+                      textTransform={"uppercase"}
+                      fixedHeight={"h-auto"}
+                    />
+
+                    <Icon
+                      IconType={ReactJs}
+                      title="React"
+                      columnSizing={"w-auto"}
+                      width={"w-6"}
+                      height={"h-6"}
+                      flexDirection={"flex-row"}
+                      padding={"p-0"}
+                      titleMargins={"my-0 ml-1"}
+                      titleSize={"text-sm"}
+                      marginBottom={"mb-4"}
+                      marginRight={"mr-3"}
+                      textTransform={"uppercase"}
+                      fixedHeight={"h-auto"}
+                    />
+                  </>
                 }
               />
 
-              {/* Project Seven */}
+              {/* Project One */}
               <FeaturedProjectCard
-                title={"PayuBuzz"}
-                status={"Launched (Internal Use)"}
-                description={`Intranet Portal developed in SharePoint SPFx for Payu India`}
+                title={"ARBC.in"}
+                status={"Live"}
+                description={`Accounting, Tax and Certifications for your business and personal needs.`}
                 float={`right-0`}
-                flexDirection={`flex-col lg:flex-row`}
+                flexDirection={`flex-col lg:flex-row-reverse`}
                 imgWidth={"1366"}
                 imgHeight={"666"}
-                imgSrc={"/projects/payu.png"}
-                liveLink={null}
+                imgSrc={"/projects/arbc.png"}
+                liveLink={"https://www.arbc.in/"}
                 repoLink={null}
                 stack={
                   <>
@@ -1297,9 +1285,24 @@ export default function Home({ publications }) {
                       fixedHeight={"h-auto"}
                     />
 
+                    <Icon
+                      IconType={Css}
+                      title="CSS"
+                      columnSizing={"w-auto"}
+                      width={"w-6"}
+                      height={"h-6"}
+                      flexDirection={"flex-row"}
+                      padding={"p-0"}
+                      titleMargins={"my-0 ml-1"}
+                      titleSize={"text-sm"}
+                      marginBottom={"mb-4"}
+                      marginRight={"mr-3"}
+                      textTransform={"uppercase"}
+                      fixedHeight={"h-auto"}
+                    />
 
                     <Icon
-                      IconType={ReactJs}
+                      IconType={NextJs}
                       title="React"
                       columnSizing={"w-auto"}
                       width={"w-6"}
@@ -1314,6 +1317,21 @@ export default function Home({ publications }) {
                       fixedHeight={"h-auto"}
                     />
 
+                    <Icon
+                      IconType={Figma}
+                      title="React"
+                      columnSizing={"w-auto"}
+                      width={"w-6"}
+                      height={"h-6"}
+                      flexDirection={"flex-row"}
+                      padding={"p-0"}
+                      titleMargins={"my-0 ml-1"}
+                      titleSize={"text-sm"}
+                      marginBottom={"mb-4"}
+                      marginRight={"mr-3"}
+                      textTransform={"uppercase"}
+                      fixedHeight={"h-auto"}
+                    />
                   </>
                 }
               />
