@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import Head from "next/head";
+import { NextSeo, SocialProfileJsonLd } from 'next-seo';
 import Image from "next/image";
 import Link from "next/link";
 import TypingEffect from "../components/TypingEffect";
@@ -219,14 +219,21 @@ export default function Home({ publications }) {
         className={`relative w-full dark:bg-darker bg-light bg-opacity-10 overflow-auto min-h-screen transition-all duration-150 ease-in-out ${navbarOpen ? "overflow-hidden" : "overflow-auto"
           }`}
       >
-        <Head>
-          <title>Atul Bhatt | Frontend Engineer</title>
-          <meta
-            name="description"
-            content="The portfolio of freelance frontend developer, Atul Bhatt"
-          />
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
+        <NextSeo
+          title="Atul Bhatt | Frontend Engineer"
+          description="The portfolio of freelance frontend developer, Atul Bhatt. Exploring the intersection of design and code."
+          canonical="https://atoolsera.com/"
+        />
+        <SocialProfileJsonLd
+          type="Person"
+          name="Atul Bhatt"
+          url="https://atoolsera.com/"
+          sameAs={[
+            'https://www.linkedin.com/in/atul-bhatt-4b1b6b1b1/', // Example, will verify in constants
+            'https://github.com/atulbhatt', // Example
+            'https://twitter.com/atulbhatt', // Example
+          ]}
+        />
 
         {/* Full-screen Menu */}
         <div

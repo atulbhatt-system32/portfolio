@@ -1,6 +1,6 @@
 
 import React from "react";
-import Head from "next/head";
+import { NextSeo } from 'next-seo';
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { shopifyProjects, shopifyVideos } from "../utils/constants";
@@ -12,13 +12,11 @@ export default function ShopifyPortfolio() {
 
     return (
         <div className="min-h-screen bg-white dark:bg-[#121212] transition-colors duration-300 font-sans selection:bg-brand selection:text-white">
-            <Head>
-                <title>Atul Bhatt | Shopify Developer</title>
-                <meta
-                    name="description"
-                    content="Specialized Shopify development portfolio of Atul Bhatt."
-                />
-            </Head>
+            <NextSeo
+                title="Atul Bhatt | Shopify Developer"
+                description="Specialized Shopify development portfolio of Atul Bhatt. Building high-converting storefronts."
+                canonical="https://atoolsera.com/shopify"
+            />
 
             {/* Navigation - Minimal */}
             <nav className="fixed top-0 w-full z-50 bg-white/80 dark:bg-[#121212]/80 backdrop-blur-md border-b border-gray-100 dark:border-gray-800">

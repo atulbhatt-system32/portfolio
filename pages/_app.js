@@ -1,10 +1,35 @@
 import '../styles/globals.css'
 import { ThemeProvider } from "next-themes";
+import { DefaultSeo } from 'next-seo';
 import { useTheme } from "next-themes";
 
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider enableSystem={true} attribute="class">
+      <DefaultSeo
+        titleTemplate="%s | Atul Bhatt"
+        defaultTitle="Atul Bhatt | Frontend Engineer"
+        description="The portfolio of freelance frontend developer, Atul Bhatt. Specialized in React, Next.js, and Shopify development."
+        openGraph={{
+          type: 'website',
+          locale: 'en_IE',
+          url: 'https://atoolsera.com/',
+          site_name: 'Atul Bhatt',
+          images: [
+            {
+              url: 'https://atoolsera.com/headshot-2024.jpg',
+              width: 800,
+              height: 600,
+              alt: 'Atul Bhatt',
+            },
+          ],
+        }}
+        twitter={{
+          handle: '@handle', // Replace with actual handle if known, or ask user? Putting placeholder for now or checking constants
+          site: '@site',
+          cardType: 'summary_large_image',
+        }}
+      />
       <Component {...pageProps} />
 
       {/* Global WhatsApp Floating Button */}

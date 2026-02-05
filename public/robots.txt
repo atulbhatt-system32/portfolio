@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://atoolsera.com
+
+# Sitemaps
+Sitemap: https://atoolsera.com/sitemap.xml
