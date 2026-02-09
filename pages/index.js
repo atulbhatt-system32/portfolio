@@ -1262,13 +1262,96 @@ export default function Home({ publications }) {
                 }
               />
 
+
+
+              {/* Project One */}
+              <FeaturedProjectCard
+                title={"about.dealshare.in"}
+                status={"Live"}
+                description={`A modern, responsive, and SEO-optimized landing page for DealShare, built with Next.js and Tailwind CSS. It features a clean, professional design with smooth animations and a focus on user experience.`}
+                float={`right-0`}
+                flexDirection={`flex-col lg:flex-row-reverse`}
+                imgWidth={"1366"}
+                imgHeight={"666"}
+                imgSrc={"/projects/dealshare.png"}
+                liveLink={"https://about.dealshare.in/"}
+                repoLink={null}
+                stack={
+                  <>
+                    <Icon
+                      IconType={Html}
+                      title="HTML"
+                      columnSizing={"w-auto"}
+                      width={"w-6"}
+                      height={"h-6"}
+                      flexDirection={"flex-row"}
+                      padding={"p-0"}
+                      titleMargins={"my-0 ml-1"}
+                      titleSize={"text-sm"}
+                      marginBottom={"mb-4"}
+                      marginRight={"mr-3"}
+                      textTransform={"uppercase"}
+                      fixedHeight={"h-auto"}
+                    />
+
+                    <Icon
+                      IconType={Css}
+                      title="CSS"
+                      columnSizing={"w-auto"}
+                      width={"w-6"}
+                      height={"h-6"}
+                      flexDirection={"flex-row"}
+                      padding={"p-0"}
+                      titleMargins={"my-0 ml-1"}
+                      titleSize={"text-sm"}
+                      marginBottom={"mb-4"}
+                      marginRight={"mr-3"}
+                      textTransform={"uppercase"}
+                      fixedHeight={"h-auto"}
+                    />
+
+                    <Icon
+                      IconType={NextJs}
+                      title="React"
+                      columnSizing={"w-auto"}
+                      width={"w-6"}
+                      height={"h-6"}
+                      flexDirection={"flex-row"}
+                      padding={"p-0"}
+                      titleMargins={"my-0 ml-1"}
+                      titleSize={"text-sm"}
+                      marginBottom={"mb-4"}
+                      marginRight={"mr-3"}
+                      textTransform={"uppercase"}
+                      fixedHeight={"h-auto"}
+                    />
+
+                    <Icon
+                      IconType={Figma}
+                      title="React"
+                      columnSizing={"w-auto"}
+                      width={"w-6"}
+                      height={"h-6"}
+                      flexDirection={"flex-row"}
+                      padding={"p-0"}
+                      titleMargins={"my-0 ml-1"}
+                      titleSize={"text-sm"}
+                      marginBottom={"mb-4"}
+                      marginRight={"mr-3"}
+                      textTransform={"uppercase"}
+                      fixedHeight={"h-auto"}
+                    />
+                  </>
+                }
+              />
+
               {/* Project One */}
               <FeaturedProjectCard
                 title={"ARBC.in"}
                 status={"Live"}
                 description={`Accounting, Tax and Certifications for your business and personal needs.`}
                 float={`right-0`}
-                flexDirection={`flex-col lg:flex-row-reverse`}
+                flexDirection={`flex-col lg:flex-row`}
                 imgWidth={"1366"}
                 imgHeight={"666"}
                 imgSrc={"/projects/arbc.png"}
